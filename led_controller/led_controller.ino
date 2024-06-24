@@ -1,7 +1,7 @@
 #include <Encoder.h>
 #include <WS2812FX.h>
 
-#define LED_COUNT 9
+#define LED_COUNT 250
 
 #define LED_PIN 5
 
