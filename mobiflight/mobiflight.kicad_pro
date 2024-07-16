@@ -55,12 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "silk_overlap|118324286|135154152|6c5819dc-4416-45fb-addd-61201fcf78f0|389ac713-7c17-41f8-81ea-d14d4deb28ce",
-        "silk_overlap|119276895|40220571|a3d17487-f41c-4443-8f04-bcaf7bc6c4c2|b05d869b-aa05-4dbe-a56e-ae10376e870a",
-        "silk_overlap|119276895|47332571|440d488c-6d9c-47f0-9114-ca198b884abe|b8193144-0011-432a-9885-f07b4efddd4e",
-        "silk_overlap|119342819|55014476|daa72d35-5fe7-4ace-9729-7aedf53705df|1573298d-94ac-47ec-837f-58b22368f56d"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -175,7 +170,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.5
       ],
       "via_dimensions": [
         {
@@ -517,6 +514,46 @@
     [
       "c2242800-1593-4096-b90b-140c6f5f02d4",
       ""
+    ],
+    [
+      "0ee169d9-8c6c-46d0-8128-cdaa6e99ca6b",
+      "stepper_connector2"
+    ],
+    [
+      "655e52e1-8211-48de-9481-39079d7b010b",
+      "stepper_connector1"
+    ],
+    [
+      "b9f56b22-d09d-48d0-8b48-66f0adcaf32e",
+      "stepper_connector3"
+    ],
+    [
+      "4435fd51-7d6c-4073-85c2-720057c3e211",
+      "stepper_connector4"
+    ],
+    [
+      "4095f220-bb20-45ed-a6bf-c32f072f5390",
+      "stepper_connector5"
+    ],
+    [
+      "d55b03e8-d3d5-41a5-bd29-0096605395eb",
+      "stepper_connector6"
+    ],
+    [
+      "dc8a8a40-2050-4e7f-a722-7ecc7ca2e7ef",
+      "stepper_connector7"
+    ],
+    [
+      "f9339513-53bd-434e-8510-8136c638d649",
+      "stepper_connector8"
+    ],
+    [
+      "dd7f8fd5-c160-42a9-b26b-3e42ac667459",
+      "stepper_connector9"
+    ],
+    [
+      "6f5af923-43d2-4a25-8a4e-d3a6341e1689",
+      "stepper_connector10"
     ]
   ],
   "text_variables": {}
