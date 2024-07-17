@@ -516,10 +516,6 @@
       ""
     ],
     [
-      "0ee169d9-8c6c-46d0-8128-cdaa6e99ca6b",
-      "stepper_connector2"
-    ],
-    [
       "655e52e1-8211-48de-9481-39079d7b010b",
       "stepper_connector1"
     ],
@@ -554,6 +550,10 @@
     [
       "6f5af923-43d2-4a25-8a4e-d3a6341e1689",
       "stepper_connector10"
+    ],
+    [
+      "0ee169d9-8c6c-46d0-8128-cdaa6e99ca6b",
+      "stepper_connector2"
     ]
   ],
   "text_variables": {}
