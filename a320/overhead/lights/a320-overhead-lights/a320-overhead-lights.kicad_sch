@@ -1,0 +1,203 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a6380c82-c7b7-4173-9d72-a54a48f51bc9")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 76.2 116.84)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2733d106-f7fc-43bb-8d79-982f2580d593")
+		(property "Sheetname" "led-drivers"
+			(at 76.2 116.1284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led-drivers.kicad_sch"
+			(at 76.2 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 142.24 88.9)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5475985d-b23d-4b9f-a5ee-16f550599801")
+		(property "Sheetname" "korri-switches"
+			(at 142.24 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "korri-switches.kicad_sch"
+			(at 142.24 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 46.99 67.31)
+		(size 16.51 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "59f3ac5f-7e35-49e8-9af5-f8116ac35179")
+		(property "Sheetname" "backlight"
+			(at 46.99 66.5984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "backlight.kicad_sch"
+			(at 46.99 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 26.67)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a8c9e1b2-afac-43eb-af82-1230f858a352")
+		(property "Sheetname" "microcontroller"
+			(at 25.4 25.9584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 25.4 31.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 130.81 55.88)
+		(size 12.7 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f311d552-6ed7-467d-bc2b-ae43fbec4ef0")
+		(property "Sheetname" "switches"
+			(at 130.81 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "switches.kicad_sch"
+			(at 130.81 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
