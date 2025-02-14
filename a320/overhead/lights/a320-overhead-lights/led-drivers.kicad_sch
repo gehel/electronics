@@ -2170,6 +2170,10 @@
 		(color 0 0 0 0)
 		(uuid "f7cb4d13-3b0e-4fb5-ac6a-967f90a1d332")
 	)
+	(no_connect
+		(at 48.26 134.62)
+		(uuid "06961302-5783-416b-bc5c-6ac3f391427a")
+	)
 	(wire
 		(pts
 			(xy 124.46 53.34) (xy 132.08 53.34)
@@ -4012,16 +4016,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 134.62) (xy 48.26 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b741fdb5-e792-4342-b5b3-5f4677614582")
-	)
-	(wire
-		(pts
 			(xy 78.74 71.12) (xy 93.98 71.12)
 		)
 		(stroke
@@ -4992,7 +4986,7 @@
 			)
 		)
 	)
-	(global_label "LEDDRV_DATA_2"
+	(global_label "LEDDRV_DATA_3"
 		(shape input)
 		(at 45.72 137.16 180)
 		(fields_autoplaced yes)
@@ -5511,28 +5505,6 @@
 		(uuid "a5031416-bec3-4761-8d35-16a009762a9b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 100.33 187.9214 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LEDDRV_DATA_3"
-		(shape input)
-		(at 45.72 134.62 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ac130e4a-2f77-4be5-a61b-e9ba8a3f7fbb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.0996 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
