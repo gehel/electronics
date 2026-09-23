@@ -9692,7 +9692,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04d322d1-fca1-444c-b36d-be81d58f4aa9")
@@ -9868,7 +9868,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13a5bb8a-588e-425c-92ea-b3733515896b")
@@ -9967,7 +9967,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "14a5eb8c-8348-4a2d-9143-e671ba6538e6")
 		(property "Reference" "J1"
@@ -10153,70 +10153,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 243.84 160.02 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f8a457f-9235-4d90-8a0b-79f6bc4534f6")
-		(property "Reference" "H5"
-			(at 246.38 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 246.38 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 243.84 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 243.84 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 243.84 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/a8c9e1b2-afac-43eb-af82-1230f858a352"
-					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 219.71 118.11 0)
 		(unit 1)
@@ -10288,7 +10224,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "2eba401f-16b5-4a5f-b028-f9ba03846b00")
 		(property "Reference" "J5"
@@ -10398,7 +10334,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "3de87312-2966-4f5f-b37a-daeac0f80315")
 		(property "Reference" "J3"
@@ -10864,7 +10800,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "4aca8bb4-0bad-4d68-9d9d-7205cd22a2b4")
 		(property "Reference" "J8"
@@ -11439,7 +11375,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "acddbcfb-e10c-446a-8cb6-c2e00836e859")
 		(property "Reference" "J7"
@@ -11944,7 +11880,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "e4f8c0ff-b4e7-44e5-967c-7bd9d5d8f8ee")
 		(property "Reference" "J4"

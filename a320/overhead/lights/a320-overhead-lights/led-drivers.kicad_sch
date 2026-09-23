@@ -6051,7 +6051,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "1509605c-57e4-4af2-94c9-a351250ded55")
 		(property "Reference" "J11"
@@ -6438,7 +6438,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "30feb771-24ae-4cf2-8668-721aca821631")
 		(property "Reference" "J12"
@@ -6812,7 +6812,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "77d7f359-5098-4c58-a343-e1d82cbafc11")
 		(property "Reference" "J10"
@@ -6988,7 +6988,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "890cb877-c407-442b-a795-222bf091592b")
 		(property "Reference" "J14"
@@ -7501,7 +7501,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "c2f8cb92-0e0d-4335-8a60-fe72cfb425ad")
 		(property "Reference" "J13"
@@ -7945,7 +7945,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "f58ad3d4-4433-48b3-9639-7ad99381196a")
 		(property "Reference" "J15"

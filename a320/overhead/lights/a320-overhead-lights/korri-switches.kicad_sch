@@ -5,30 +5,27 @@
 	(uuid "485dcbae-b7e3-46ca-a156-8a48aa43afb3")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:LED"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
+		(symbol "a320:Korry_Switch"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
+			(property "Reference" "SW"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "a320:Korry Switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -37,7 +34,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -46,7 +43,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Light emitting diode"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -55,89 +52,9 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
+			(symbol "Korry_Switch_0_0"
 				(pin passive line
-					(at -3.81 0 0)
+					(at -5.08 12.7 0)
 					(length 2.54)
 					(name "K"
 						(effects
@@ -155,7 +72,25 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 5.08 -12.7 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 12.7 180)
 					(length 2.54)
 					(name "A"
 						(effects
@@ -172,71 +107,129 @@
 						)
 					)
 				)
-			)
-		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 2.54)
+					(name "COM1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "NO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(hide yes)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 7.62 180)
+					(length 2.54)
+					(name "NC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name "COM2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "NC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
 			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
+			(symbol "Korry_Switch_0_1"
 				(circle
-					(center -2.032 0)
+					(center -2.032 -5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 5.08)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -248,7 +241,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy -2.54 -12.7) (xy -1.27 -12.7)
 					)
 					(stroke
 						(width 0)
@@ -260,7 +253,163 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
+						(xy -2.54 12.7) (xy -1.27 12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -13.97) (xy -1.27 -11.43)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 5.08) (xy 1.27 7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 11.43) (xy -1.27 13.97)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 6.35) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type dash)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -12.7) (xy 1.27 -12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 12.7) (xy 1.27 12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -13.97) (xy 1.27 -11.43) (xy -1.27 -12.7) (xy 1.27 -13.97)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 11.43) (xy 1.27 13.97) (xy -1.27 12.7) (xy 1.27 11.43)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -13.97) (xy -5.334 -15.494) (xy -4.572 -15.494) (xy -5.334 -15.494) (xy -5.334 -14.732)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 11.43) (xy -5.334 9.906) (xy -4.572 9.906) (xy -5.334 9.906) (xy -5.334 10.668)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -13.97) (xy -4.064 -15.494) (xy -3.302 -15.494) (xy -4.064 -15.494) (xy -4.064 -14.732)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 11.43) (xy -4.064 9.906) (xy -3.302 9.906) (xy -4.064 9.906) (xy -4.064 10.668)
 					)
 					(stroke
 						(width 0)
@@ -271,7 +420,7 @@
 					)
 				)
 				(circle
-					(center 2.032 0)
+					(center 2.032 -7.62)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -281,35 +430,52 @@
 						(type none)
 					)
 				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 7.62)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Korry_Switch_1_0"
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 -7.62 180)
 					(length 2.54)
-					(name "2"
+					(name "NO2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -536,1085 +702,1069 @@
 			)
 		)
 	)
+	(no_connect
+		(at 78.74 93.98)
+		(uuid "09721ac9-d762-43d0-b088-a6d5f7ef5de5")
+	)
+	(no_connect
+		(at 127 30.48)
+		(uuid "0eca24e8-43c0-44f7-aa30-e0fcfd7c15b2")
+	)
+	(no_connect
+		(at 127 81.28)
+		(uuid "1a2061d5-4034-4352-9f44-9dd2702b2d25")
+	)
+	(no_connect
+		(at 50.8 81.28)
+		(uuid "2a8ff501-e85c-41c8-9a45-3a1ff39d30c5")
+	)
+	(no_connect
+		(at 88.9 142.24)
+		(uuid "330026d0-ff1e-47f5-99d8-48f31cf6e711")
+	)
+	(no_connect
+		(at 127 40.64)
+		(uuid "372401cc-ee22-47e5-a29d-093dcc574622")
+	)
+	(no_connect
+		(at 116.84 93.98)
+		(uuid "38c574ed-ac7e-42b2-99d6-8acd8ffa0848")
+	)
+	(no_connect
+		(at 165.1 91.44)
+		(uuid "3ac9be01-6a4f-4a3a-9c76-b0ddee861ade")
+	)
+	(no_connect
+		(at 50.8 30.48)
+		(uuid "3c810843-181a-4f82-a3c2-55c833cb8c91")
+	)
+	(no_connect
+		(at 40.64 43.18)
+		(uuid "53d4b18a-643b-4c4e-b110-ae2c5d2c6867")
+	)
+	(no_connect
+		(at 78.74 43.18)
+		(uuid "58424eb7-b3d0-46f3-80af-9c6ce3861a9a")
+	)
+	(no_connect
+		(at 165.1 96.52)
+		(uuid "59b078f7-5abf-4db2-a501-fb981da416c7")
+	)
+	(no_connect
+		(at 40.64 144.78)
+		(uuid "5bc52c52-71c7-4bf2-87b1-b38591387dd6")
+	)
+	(no_connect
+		(at 165.1 30.48)
+		(uuid "5fb62e7e-283b-458f-a6c9-1d62d2953f92")
+	)
+	(no_connect
+		(at 116.84 43.18)
+		(uuid "6171243b-9e69-40b7-9bfa-2e4737626a6f")
+	)
+	(no_connect
+		(at 88.9 45.72)
+		(uuid "63da3170-c42c-44f1-b99e-a2cba4430357")
+	)
+	(no_connect
+		(at 50.8 96.52)
+		(uuid "6d44d7a4-14e3-4b68-80bc-41781b2a8e49")
+	)
+	(no_connect
+		(at 154.94 93.98)
+		(uuid "6ee92488-7c90-4318-86bf-0cdce0f6704a")
+	)
+	(no_connect
+		(at 88.9 96.52)
+		(uuid "6fba7478-e173-4339-aaae-eefaa3cc15d7")
+	)
+	(no_connect
+		(at 50.8 142.24)
+		(uuid "7260f4c0-3212-4a94-9a5d-1639187997ca")
+	)
+	(no_connect
+		(at 165.1 40.64)
+		(uuid "74e29c01-4015-40f1-96cb-e1b28de7e88a")
+	)
+	(no_connect
+		(at 50.8 91.44)
+		(uuid "7c9316c1-dc2a-449b-8d37-7bfd779789f8")
+	)
+	(no_connect
+		(at 88.9 147.32)
+		(uuid "7f49d0e4-0d7b-4ed2-b6ef-25ecaddf357c")
+	)
+	(no_connect
+		(at 127 91.44)
+		(uuid "84c12b0e-9d25-45b4-bd69-793046c31714")
+	)
+	(no_connect
+		(at 165.1 45.72)
+		(uuid "85c6a285-05f0-4b76-bce9-a7e946ee3e8e")
+	)
+	(no_connect
+		(at 127 96.52)
+		(uuid "8e7daf3a-d351-44f7-9b39-89acabe01d51")
+	)
+	(no_connect
+		(at 88.9 91.44)
+		(uuid "8f3389bd-c4fd-41e3-b460-814ca30f5322")
+	)
+	(no_connect
+		(at 50.8 40.64)
+		(uuid "95fdf997-3ca2-4ab0-82bd-249d40ab8dd7")
+	)
+	(no_connect
+		(at 88.9 132.08)
+		(uuid "a04b335c-d70c-4289-8475-aff5b0f9b0d1")
+	)
+	(no_connect
+		(at 165.1 81.28)
+		(uuid "a338138a-6524-4c4a-ada4-701aa5356871")
+	)
+	(no_connect
+		(at 88.9 40.64)
+		(uuid "b48a9677-9e54-4ddc-9e67-db4e0365b77c")
+	)
+	(no_connect
+		(at 50.8 132.08)
+		(uuid "b50b0c8b-ad09-4180-9d63-257ab76bebab")
+	)
+	(no_connect
+		(at 127 45.72)
+		(uuid "c04c444b-f3fd-4b47-beb6-79432e253e5e")
+	)
+	(no_connect
+		(at 50.8 45.72)
+		(uuid "c48c02fd-e9e2-41d0-b848-03091657e638")
+	)
+	(no_connect
+		(at 88.9 81.28)
+		(uuid "c49622cf-3251-4519-88b7-6028bb81ba8c")
+	)
+	(no_connect
+		(at 88.9 30.48)
+		(uuid "c6e6fbfb-8ce0-48bb-a5b5-eac72f9af834")
+	)
+	(no_connect
+		(at 50.8 147.32)
+		(uuid "ce6f0a01-ccbf-481d-b084-3578a6dbb22f")
+	)
+	(no_connect
+		(at 40.64 93.98)
+		(uuid "e12087b0-cd39-448d-87ba-3eb1258ec7c6")
+	)
+	(no_connect
+		(at 154.94 43.18)
+		(uuid "fe73b70e-7d41-4ab2-8a5e-530e5f00998e")
+	)
+	(no_connect
+		(at 78.74 144.78)
+		(uuid "fe8e2ef5-596f-4394-b4b0-50537a169a8a")
+	)
 	(wire
 		(pts
-			(xy 60.96 88.9) (xy 60.96 91.44)
+			(xy 91.44 76.2) (xy 91.44 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "02f1b0dc-bdaa-4cb2-8682-ab5db27147bd")
+		(uuid "05309d6b-7c1d-4eb8-8dff-bf2f780df064")
 	)
 	(wire
 		(pts
-			(xy 73.66 88.9) (xy 76.2 88.9)
+			(xy 38.1 25.4) (xy 40.64 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "080c3311-9a4f-4f35-a20d-3f5074a92e21")
+		(uuid "05fecf20-20c9-4579-b7a1-726750837b19")
 	)
 	(wire
 		(pts
-			(xy 137.16 25.4) (xy 137.16 22.86)
+			(xy 114.3 101.6) (xy 116.84 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0cdd3967-539d-4460-90fc-c29de0d866ff")
+		(uuid "0952f3cc-28c2-4c62-9a07-82eff8401967")
 	)
 	(wire
 		(pts
-			(xy 71.12 25.4) (xy 76.2 25.4)
+			(xy 53.34 25.4) (xy 50.8 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0df72a63-4c45-4d69-bf13-dc5526b61f1b")
+		(uuid "0a0cf5e3-58dc-4ee6-ac5e-ec11acce3414")
 	)
 	(wire
 		(pts
-			(xy 147.32 25.4) (xy 152.4 25.4)
+			(xy 76.2 101.6) (xy 78.74 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "122df158-182f-4b24-a251-df6d2f30c670")
+		(uuid "0b26cad9-3b21-40d4-9b6b-d3a016bf7f16")
 	)
 	(wire
 		(pts
-			(xy 185.42 76.2) (xy 190.5 76.2)
+			(xy 53.34 50.8) (xy 50.8 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "149599bb-b7e9-44bd-835b-e8a87fed3100")
+		(uuid "0e6b4633-e7e7-4c17-a0c7-7eace741cf77")
 	)
 	(wire
 		(pts
-			(xy 25.4 139.7) (xy 22.86 139.7)
+			(xy 114.3 76.2) (xy 116.84 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "17d99b79-6604-4716-ac69-5e0c5ba8512e")
+		(uuid "0fb459ec-7303-45e2-95c9-905df4f128ac")
 	)
 	(wire
 		(pts
-			(xy 185.42 101.6) (xy 190.5 101.6)
+			(xy 152.4 50.8) (xy 154.94 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1baf2fdf-3c32-46bd-a1ab-68bb3a7500f8")
+		(uuid "119d0095-f2ab-4da4-9800-b942c8a41b86")
 	)
 	(wire
 		(pts
-			(xy 139.7 50.8) (xy 132.08 50.8)
+			(xy 167.64 48.26) (xy 167.64 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1be1cfad-51e5-4f27-b598-6652b2aa6222")
+		(uuid "13ad9578-2239-48e4-b713-127623293e72")
 	)
 	(wire
 		(pts
-			(xy 147.32 50.8) (xy 152.4 50.8)
+			(xy 76.2 134.62) (xy 76.2 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "239fd2b5-63d8-472f-bfcc-81f3255a3e17")
+		(uuid "14c374ec-c7d7-4d2c-869f-4abb1fcf5171")
 	)
 	(wire
 		(pts
-			(xy 132.08 50.8) (xy 132.08 48.26)
+			(xy 76.2 127) (xy 78.74 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "244e7fac-baa8-4a61-ae85-bdf8a1f2b550")
+		(uuid "16b6f95c-4371-46ee-948b-d36e1e73c230")
 	)
 	(wire
 		(pts
-			(xy 25.4 88.9) (xy 22.86 88.9)
+			(xy 165.1 35.56) (xy 167.64 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "26aa37e3-080f-4ac4-bcf8-d839cbe7286f")
+		(uuid "17b76756-3ad1-4aa1-8698-986af8cad618")
 	)
 	(wire
 		(pts
-			(xy 63.5 152.4) (xy 55.88 152.4)
+			(xy 76.2 50.8) (xy 78.74 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "26d15934-8a64-4041-86f2-5366ad361744")
+		(uuid "17cbfdad-add9-41e1-8f0b-f324b66e878d")
 	)
 	(wire
 		(pts
-			(xy 35.56 38.1) (xy 38.1 38.1)
+			(xy 167.64 99.06) (xy 167.64 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "28bb42f8-4c7b-45d1-8734-bbaecebeb4cf")
+		(uuid "19934e88-015f-49c1-aa41-448478f82841")
 	)
 	(wire
 		(pts
-			(xy 17.78 101.6) (xy 17.78 99.06)
+			(xy 114.3 33.02) (xy 114.3 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "290a6048-913c-4501-883d-6e7f0dea82f8")
+		(uuid "1a8a5863-d371-41a8-81a4-11360b86a857")
 	)
 	(wire
 		(pts
-			(xy 185.42 50.8) (xy 190.5 50.8)
+			(xy 167.64 25.4) (xy 167.64 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b6b8c52-bedb-43a2-9ea5-ac04f721b120")
+		(uuid "1e4765f6-5683-44e7-81ea-9baeabba55e4")
 	)
 	(wire
 		(pts
-			(xy 71.12 152.4) (xy 76.2 152.4)
+			(xy 78.74 83.82) (xy 76.2 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2e0e8751-bba5-4fd6-8e8f-0c18dcf0e264")
+		(uuid "213e1436-d098-4087-a5db-71180dd7ef4e")
 	)
 	(wire
 		(pts
-			(xy 25.4 25.4) (xy 22.86 25.4)
+			(xy 91.44 127) (xy 91.44 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f1bcc43-524c-4add-a7a9-e129d42ea65d")
+		(uuid "21c521c2-2510-4907-8e25-a047173a1448")
 	)
 	(wire
 		(pts
-			(xy 71.12 50.8) (xy 76.2 50.8)
+			(xy 50.8 127) (xy 53.34 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f544419-b053-4409-9857-ee9248ea5fb6")
+		(uuid "2c7d3dd1-374e-4ece-b079-04ee0ebfcc2b")
 	)
 	(wire
 		(pts
-			(xy 71.12 76.2) (xy 76.2 76.2)
+			(xy 76.2 152.4) (xy 78.74 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "365d4178-f4f6-47c8-a716-7e0c484f68e9")
+		(uuid "2e6324de-1cc8-4a43-9994-4e078cdced42")
 	)
 	(wire
 		(pts
-			(xy 55.88 50.8) (xy 55.88 48.26)
+			(xy 152.4 33.02) (xy 152.4 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "38f4ba69-7830-448e-ab02-c7866e3f1562")
+		(uuid "31b93e94-4faf-4320-9cc2-1ece1f091fd6")
 	)
 	(wire
 		(pts
-			(xy 175.26 88.9) (xy 175.26 91.44)
+			(xy 129.54 48.26) (xy 129.54 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39267273-43e9-4e4a-ad09-655bcf3deecb")
+		(uuid "323d9aff-1e42-402f-8e0c-37e76d6982e4")
 	)
 	(wire
 		(pts
-			(xy 55.88 101.6) (xy 55.88 99.06)
+			(xy 78.74 134.62) (xy 76.2 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3b0fe5b4-b954-452c-b29b-c34cd1ac8a72")
+		(uuid "32545c74-b52d-4ccc-b119-88a0f94fba8e")
 	)
 	(wire
 		(pts
-			(xy 22.86 88.9) (xy 22.86 91.44)
+			(xy 127 25.4) (xy 129.54 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3bfed17c-8ae1-4da4-bcec-665827ecefea")
+		(uuid "36648a2c-f617-4084-86ac-01d230872a18")
 	)
 	(wire
 		(pts
-			(xy 137.16 38.1) (xy 137.16 40.64)
+			(xy 91.44 25.4) (xy 91.44 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3d52cba6-d280-44a5-8688-11fefb30c46b")
+		(uuid "37b42ea1-9077-478f-8dd7-5c5bc450ec46")
 	)
 	(wire
 		(pts
-			(xy 185.42 25.4) (xy 190.5 25.4)
+			(xy 91.44 48.26) (xy 91.44 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3ecee35c-3ec4-4eb8-8644-2d2ed131c28f")
+		(uuid "3e58f3a9-fbfd-4004-847f-7d1a85b822fd")
 	)
 	(wire
 		(pts
-			(xy 187.96 38.1) (xy 190.5 38.1)
+			(xy 167.64 76.2) (xy 167.64 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "444aadd7-3e50-428e-bcba-0b70f0366d85")
+		(uuid "3f34a324-8abf-4879-a416-8a53ea96264c")
 	)
 	(wire
 		(pts
-			(xy 33.02 152.4) (xy 38.1 152.4)
+			(xy 152.4 83.82) (xy 152.4 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "464bdca4-b890-4474-94d5-6221ad2a9c68")
+		(uuid "3fe0f796-31b1-410a-8e1a-2899cadb2817")
 	)
 	(wire
 		(pts
-			(xy 147.32 76.2) (xy 152.4 76.2)
+			(xy 152.4 101.6) (xy 154.94 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "47c6461a-d94a-41c8-965e-41a4f5cb2754")
+		(uuid "41105d4e-17b6-4de3-8646-9e657866ab26")
 	)
 	(wire
 		(pts
-			(xy 22.86 139.7) (xy 22.86 142.24)
+			(xy 88.9 76.2) (xy 91.44 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e65fed5-f0aa-4b5a-b076-f253970a7b69")
+		(uuid "429d5126-6297-48f4-84e8-a694151add2d")
 	)
 	(wire
 		(pts
-			(xy 33.02 127) (xy 38.1 127)
+			(xy 154.94 33.02) (xy 152.4 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4eacdab4-b5bf-43d0-9eb6-6de9d2a93061")
+		(uuid "42e5d656-0057-44ac-bade-8628e9b0949e")
 	)
 	(wire
 		(pts
-			(xy 63.5 101.6) (xy 55.88 101.6)
+			(xy 129.54 50.8) (xy 127 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "50ea998a-6672-4fef-900e-d27147576646")
+		(uuid "444752d2-b898-4857-af3b-0c6c75b6137a")
 	)
 	(wire
 		(pts
-			(xy 149.86 38.1) (xy 152.4 38.1)
+			(xy 127 76.2) (xy 129.54 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "52122a4e-abab-49ab-a526-3a316332cae8")
+		(uuid "46b83aa4-8d64-4dbd-8e40-c38953e7c7d2")
 	)
 	(wire
 		(pts
-			(xy 139.7 25.4) (xy 137.16 25.4)
+			(xy 91.44 152.4) (xy 88.9 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5472860e-53f3-4c6d-89e5-e05780fe764f")
+		(uuid "47324bb9-7687-4745-82f0-cc0fc6c793f8")
 	)
 	(wire
 		(pts
-			(xy 35.56 139.7) (xy 38.1 139.7)
+			(xy 127 86.36) (xy 129.54 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "55ef775e-d574-4923-8cc9-d9187375e932")
+		(uuid "47a1a939-4900-41c1-b597-7c8a5a2f8ef7")
 	)
 	(wire
 		(pts
-			(xy 137.16 76.2) (xy 137.16 73.66)
+			(xy 76.2 83.82) (xy 76.2 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "571473bd-9479-4d51-b0f4-d1afcd610460")
+		(uuid "48217f70-a062-438e-a252-15ea332e9c22")
 	)
 	(wire
 		(pts
-			(xy 60.96 25.4) (xy 60.96 22.86)
+			(xy 50.8 35.56) (xy 53.34 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58cbfc12-4810-47cd-893f-f7f7360df31d")
+		(uuid "4b4008b7-1c53-486b-a848-52ae65811a8e")
 	)
 	(wire
 		(pts
-			(xy 139.7 76.2) (xy 137.16 76.2)
+			(xy 88.9 86.36) (xy 91.44 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5ffa99e1-a37c-4248-abb3-76f57e58f0f6")
+		(uuid "5a11258d-3a0d-4148-af0a-9b8c5d341b08")
 	)
 	(wire
 		(pts
-			(xy 33.02 76.2) (xy 38.1 76.2)
+			(xy 53.34 101.6) (xy 50.8 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6b113f29-285e-46d9-8aca-c8aa40e3e050")
+		(uuid "5b974d8b-797a-4f6c-b04d-1b3da4315169")
 	)
 	(wire
 		(pts
-			(xy 170.18 50.8) (xy 170.18 48.26)
+			(xy 53.34 152.4) (xy 50.8 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d69dc36-1ef3-445c-b0eb-6f88559c9ae2")
+		(uuid "5c75c1f4-b13d-4daa-b59b-160ed8e79932")
 	)
 	(wire
 		(pts
-			(xy 175.26 76.2) (xy 175.26 73.66)
+			(xy 116.84 33.02) (xy 114.3 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6e88c463-1e95-4ddf-bc6c-c8da834133cd")
+		(uuid "5f90836e-c92a-45c1-9935-9a27ece543c4")
 	)
 	(wire
 		(pts
-			(xy 25.4 50.8) (xy 17.78 50.8)
+			(xy 114.3 83.82) (xy 114.3 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6ebaa409-6663-4c57-8b7a-e49ae7046749")
+		(uuid "6aa3182a-0e4c-4d90-bc2b-a6076831f437")
 	)
 	(wire
 		(pts
-			(xy 60.96 38.1) (xy 60.96 40.64)
+			(xy 167.64 101.6) (xy 165.1 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "72ae78a5-e4d1-4a5f-acc1-d51c3e3d32ea")
+		(uuid "6cf7a78a-e66f-4807-869f-a41a0f6bf31a")
 	)
 	(wire
 		(pts
-			(xy 25.4 38.1) (xy 22.86 38.1)
+			(xy 53.34 149.86) (xy 53.34 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "76a266a3-8ef2-43e8-b96f-37f620989e1d")
+		(uuid "6f94ea61-21b3-43ad-b70e-eb4fdaa472d6")
 	)
 	(wire
 		(pts
-			(xy 187.96 88.9) (xy 190.5 88.9)
+			(xy 91.44 149.86) (xy 91.44 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78bdef67-331e-4fa6-b84d-3f0062b050f3")
+		(uuid "7530f42b-acbe-4884-9de4-ba55150d11d3")
 	)
 	(wire
 		(pts
-			(xy 73.66 139.7) (xy 76.2 139.7)
+			(xy 88.9 137.16) (xy 91.44 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7f96d7f3-eec6-4898-824f-3f4bbbf2f2f7")
+		(uuid "7b9991b5-617a-43d7-a029-114d245e81a8")
 	)
 	(wire
 		(pts
-			(xy 177.8 76.2) (xy 175.26 76.2)
+			(xy 165.1 86.36) (xy 167.64 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7fa69ce3-11b2-4420-90da-e9cd24161bb2")
+		(uuid "7d14136d-387a-472e-8a62-42853aea4680")
 	)
 	(wire
 		(pts
-			(xy 177.8 101.6) (xy 170.18 101.6)
+			(xy 165.1 25.4) (xy 167.64 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "803b6f73-3fa9-4dec-b605-1ac53600d366")
+		(uuid "7f540cdb-60a3-4858-9b67-f21364dbd803")
 	)
 	(wire
 		(pts
-			(xy 175.26 25.4) (xy 175.26 22.86)
+			(xy 38.1 83.82) (xy 38.1 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "82bcecea-59d3-4853-adf3-298fca97f8a0")
+		(uuid "807082b7-250e-4d34-922f-fa8cffb8409a")
 	)
 	(wire
 		(pts
-			(xy 177.8 88.9) (xy 175.26 88.9)
+			(xy 38.1 33.02) (xy 38.1 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "88e1c5d3-d87e-4156-9926-4ad72d73f587")
+		(uuid "821a1556-d450-42f4-8510-0f3f7c03a88b")
 	)
 	(wire
 		(pts
-			(xy 63.5 88.9) (xy 60.96 88.9)
+			(xy 53.34 48.26) (xy 53.34 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a39fa3d-9cd4-4321-9c2f-5c216b0e3c0c")
+		(uuid "849753b0-7d8f-4802-b2aa-186876cfc071")
 	)
 	(wire
 		(pts
-			(xy 63.5 50.8) (xy 55.88 50.8)
+			(xy 53.34 127) (xy 53.34 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a630afe-cf07-496e-bd69-b94e32fa4a62")
+		(uuid "84e32919-beb3-4fec-ae40-f55a3f453654")
 	)
 	(wire
 		(pts
-			(xy 177.8 38.1) (xy 175.26 38.1)
+			(xy 91.44 99.06) (xy 91.44 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8af5e6d5-2b43-465a-a09a-c5fcebfc3736")
+		(uuid "862e94cd-9dda-4e63-990c-9cbd6b0de877")
 	)
 	(wire
 		(pts
-			(xy 175.26 38.1) (xy 175.26 40.64)
+			(xy 88.9 127) (xy 91.44 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b52b7f7-353d-4c4a-a29d-69fbf8f83aa3")
+		(uuid "87a8c715-9694-490f-bfcb-84db286a00d0")
 	)
 	(wire
 		(pts
-			(xy 25.4 127) (xy 22.86 127)
+			(xy 53.34 76.2) (xy 53.34 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8dc1682b-5499-4676-97b4-04f0fdae2e21")
+		(uuid "8a44d474-b145-41f8-a4ee-b76ad7e0368e")
 	)
 	(wire
 		(pts
-			(xy 33.02 101.6) (xy 38.1 101.6)
+			(xy 38.1 50.8) (xy 40.64 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "902ee619-f549-40f1-b2d7-4b92e0824a0d")
+		(uuid "8cb06d31-71e4-47f5-ab12-49bc675131d7")
 	)
 	(wire
 		(pts
-			(xy 22.86 25.4) (xy 22.86 22.86)
+			(xy 88.9 35.56) (xy 91.44 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "95416722-635e-4105-9248-815aef4d5dc1")
+		(uuid "940fa40b-224b-47ee-9b01-d0dfc1a9dac5")
 	)
 	(wire
 		(pts
-			(xy 147.32 101.6) (xy 152.4 101.6)
+			(xy 40.64 83.82) (xy 38.1 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9574ef78-8b68-4887-a6a7-2ee34cef6912")
+		(uuid "943fcfb8-7974-48ca-a538-3a883a1a5353")
 	)
 	(wire
 		(pts
-			(xy 63.5 38.1) (xy 60.96 38.1)
+			(xy 129.54 99.06) (xy 129.54 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9a0373ec-9895-484d-88dc-69ac3acb80e5")
+		(uuid "959b601d-275e-4d1d-ab49-1a620bd11458")
 	)
 	(wire
 		(pts
-			(xy 63.5 127) (xy 60.96 127)
+			(xy 38.1 127) (xy 40.64 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a63147b0-29ce-452a-a24d-5e74250801e6")
+		(uuid "967b4633-d0aa-46ba-b1bc-f25a8bfb14bb")
 	)
 	(wire
 		(pts
-			(xy 25.4 152.4) (xy 17.78 152.4)
+			(xy 53.34 99.06) (xy 53.34 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a6451137-49cd-47da-9b37-5c159765cc1e")
+		(uuid "9a385bce-8f7d-40bc-a0f1-9c5c5fc6369b")
 	)
 	(wire
 		(pts
-			(xy 35.56 88.9) (xy 38.1 88.9)
+			(xy 38.1 134.62) (xy 38.1 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aa92d464-399b-436a-9c25-c1cf3f4ccab5")
+		(uuid "9b77ef12-8434-4d01-a636-2e7d3c21bcf1")
 	)
 	(wire
 		(pts
-			(xy 60.96 76.2) (xy 60.96 73.66)
+			(xy 50.8 137.16) (xy 53.34 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af0fdfc8-e0f0-4e18-893a-00692854d21a")
+		(uuid "9df10714-18e7-42ad-a79d-c23788795e04")
 	)
 	(wire
 		(pts
-			(xy 139.7 88.9) (xy 137.16 88.9)
+			(xy 154.94 83.82) (xy 152.4 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b17f029e-4047-483d-b9db-044f5642ba7b")
+		(uuid "9fc58abf-c12e-468e-85f0-300b575d51c8")
 	)
 	(wire
 		(pts
-			(xy 63.5 76.2) (xy 60.96 76.2)
+			(xy 50.8 86.36) (xy 53.34 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b57c65fc-21f9-40fe-b82a-b86121c9fde2")
+		(uuid "a53bce3d-0beb-4dbd-9073-8dec197d7b97")
 	)
 	(wire
 		(pts
-			(xy 22.86 76.2) (xy 22.86 73.66)
+			(xy 53.34 22.86) (xy 53.34 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7956759-fab0-4310-97d7-d0f9f7e98e70")
+		(uuid "a736cfc5-dfb6-4e47-b874-086e9c1bf0dc")
 	)
 	(wire
 		(pts
-			(xy 149.86 88.9) (xy 152.4 88.9)
+			(xy 88.9 25.4) (xy 91.44 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b83b4efa-9026-4262-bf41-cae8bd250179")
+		(uuid "afa1ba6c-b8e5-426f-a57e-c652a0bff783")
 	)
 	(wire
 		(pts
-			(xy 22.86 127) (xy 22.86 124.46)
+			(xy 129.54 25.4) (xy 129.54 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ba8bc104-3966-4fe9-b924-1f48f327daec")
+		(uuid "b11f5fa5-fff7-40c4-a08e-37ce5a78715e")
 	)
 	(wire
 		(pts
-			(xy 132.08 101.6) (xy 132.08 99.06)
+			(xy 76.2 76.2) (xy 78.74 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bdd97980-68d2-4cdd-9cea-2c580eb40183")
+		(uuid "b29e4dcc-3cfe-482d-80ec-77880d36008a")
 	)
 	(wire
 		(pts
-			(xy 33.02 50.8) (xy 38.1 50.8)
+			(xy 114.3 50.8) (xy 116.84 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be5e1720-a13f-4920-ba85-eefe6ac27d39")
+		(uuid "b61396c8-7fe1-4017-8616-ae15754f063d")
 	)
 	(wire
 		(pts
-			(xy 33.02 25.4) (xy 38.1 25.4)
+			(xy 78.74 33.02) (xy 76.2 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bf5f6791-ff84-44bd-bd93-791f923c703e")
+		(uuid "b97d221a-465a-4a53-853b-0bec10070671")
 	)
 	(wire
 		(pts
-			(xy 25.4 76.2) (xy 22.86 76.2)
+			(xy 114.3 25.4) (xy 116.84 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c3503399-b253-46e5-9283-78a1c73b496e")
+		(uuid "ba77cf4a-1b93-4964-9fe7-1183bf4b4282")
 	)
 	(wire
 		(pts
-			(xy 177.8 25.4) (xy 175.26 25.4)
+			(xy 152.4 76.2) (xy 154.94 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c561a2cc-5c0d-409e-88c7-6e9ea0d263a3")
+		(uuid "baa8e03e-5e9e-4a94-81b1-97a79ffc417a")
 	)
 	(wire
 		(pts
-			(xy 17.78 50.8) (xy 17.78 48.26)
+			(xy 116.84 83.82) (xy 114.3 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c5bcf4a4-931b-4b69-a8e5-792f9addefa5")
+		(uuid "bda67b91-301c-4095-bf1b-833b4f656f61")
 	)
 	(wire
 		(pts
-			(xy 60.96 139.7) (xy 60.96 142.24)
+			(xy 91.44 101.6) (xy 88.9 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c9ccdd3f-2370-49a6-8cfb-78d1980210e3")
+		(uuid "c267cd78-8173-451d-9a4f-ed867b7ed999")
 	)
 	(wire
 		(pts
-			(xy 139.7 38.1) (xy 137.16 38.1)
+			(xy 40.64 33.02) (xy 38.1 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cb30c4e9-9791-432b-b852-a70bed057b6c")
+		(uuid "c3a3dc46-71db-4b1f-82f0-5747fa53e13b")
 	)
 	(wire
 		(pts
-			(xy 139.7 101.6) (xy 132.08 101.6)
+			(xy 76.2 33.02) (xy 76.2 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cb9bf4b7-c426-4a06-a2f2-5027110f560f")
+		(uuid "cf58eea5-baad-4aa9-a84f-c4559523a356")
 	)
 	(wire
 		(pts
-			(xy 60.96 127) (xy 60.96 124.46)
+			(xy 76.2 25.4) (xy 78.74 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cc3f2909-774c-449c-95f9-16e57dd89c87")
+		(uuid "d1d29cbc-fb4b-4ade-8471-0d2679c6c699")
 	)
 	(wire
 		(pts
-			(xy 25.4 101.6) (xy 17.78 101.6)
+			(xy 38.1 76.2) (xy 40.64 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cf49ce29-ad24-4f9e-8b52-385e37700be8")
+		(uuid "d396868e-f3fb-4402-b601-a8cb99a5ed52")
 	)
 	(wire
 		(pts
-			(xy 71.12 101.6) (xy 76.2 101.6)
+			(xy 129.54 76.2) (xy 129.54 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cfc4fb24-7785-4d5a-8e72-4d1ff440413e")
+		(uuid "d5ee9ab2-d2ab-4db9-ba2d-da3332cb59a1")
 	)
 	(wire
 		(pts
-			(xy 71.12 127) (xy 76.2 127)
+			(xy 152.4 25.4) (xy 154.94 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d36f6811-c819-42e7-81e9-d40cd886040d")
+		(uuid "daafccfc-676e-4063-bcbf-3588422eb1b4")
 	)
 	(wire
 		(pts
-			(xy 55.88 152.4) (xy 55.88 149.86)
+			(xy 38.1 101.6) (xy 40.64 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3c307f8-143c-4c20-beb6-4594706d90e7")
+		(uuid "db9d84fd-e27f-4e37-bff4-6ae92216cf80")
 	)
 	(wire
 		(pts
-			(xy 177.8 50.8) (xy 170.18 50.8)
+			(xy 91.44 50.8) (xy 88.9 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dad3536f-a872-409d-8687-faa85d6594a3")
+		(uuid "dd3b34f4-f189-4a88-8a04-473cc01534c1")
 	)
 	(wire
 		(pts
-			(xy 17.78 152.4) (xy 17.78 149.86)
+			(xy 165.1 76.2) (xy 167.64 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "db85eb61-3a9f-4c5c-ab7b-fe4278353e2d")
+		(uuid "df2b1e54-593b-4120-a8df-0797715578fd")
 	)
 	(wire
 		(pts
-			(xy 73.66 38.1) (xy 76.2 38.1)
+			(xy 50.8 76.2) (xy 53.34 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e36df338-db9c-4028-bc34-714db88e3bc3")
+		(uuid "e3f2f80d-e637-4350-b2c1-565b3da1128c")
 	)
 	(wire
 		(pts
-			(xy 137.16 88.9) (xy 137.16 91.44)
+			(xy 167.64 50.8) (xy 165.1 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e5a25949-c3d9-42e8-ba5d-3d6a0e02f555")
+		(uuid "e6253527-967e-4d30-ae34-bef5946f229a")
 	)
 	(wire
 		(pts
-			(xy 22.86 38.1) (xy 22.86 40.64)
+			(xy 129.54 101.6) (xy 127 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e7488dd7-5ad2-4955-83e4-b262625382bc")
+		(uuid "e785fbad-6457-4d13-a022-43caae17a37d")
 	)
 	(wire
 		(pts
-			(xy 63.5 25.4) (xy 60.96 25.4)
+			(xy 38.1 152.4) (xy 40.64 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ea494854-fe27-4519-9d00-a088d326a066")
+		(uuid "f6a4edad-6ad4-48e5-986a-59aab86ce6b3")
 	)
 	(wire
 		(pts
-			(xy 63.5 139.7) (xy 60.96 139.7)
+			(xy 40.64 134.62) (xy 38.1 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f01a1309-d6e6-4d6b-84e7-8f58b9f372e7")
+		(uuid "f7571b0b-b7f6-403e-9402-46660353dc04")
 	)
 	(wire
 		(pts
-			(xy 170.18 101.6) (xy 170.18 99.06)
+			(xy 127 35.56) (xy 129.54 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
-		)
-		(uuid "fd699541-dc69-4571-a92e-466833407288")
-	)
-	(global_label "wingaicefault"
-		(shape input)
-		(at 38.1 25.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0ac8621d-33af-4d47-87a2-9022e5f904a3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.6641 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ditchingon"
-		(shape input)
-		(at 190.5 101.6 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1029cc28-18e6-4f40-b905-1c07d3aa4973")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 203.4031 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "modeselfault"
-		(shape input)
-		(at 38.1 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "16fa61dc-64bd-4445-8133-219418d1c0d3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.3616 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "eng1aicefault"
-		(shape input)
-		(at 152.4 25.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1a2319b3-344d-4b6a-95e3-1257f8d3e9c6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.3269 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "sparefault"
-		(shape input)
-		(at 76.2 25.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1aaf5084-c4d0-405a-be6b-da76cb9c2d3d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.8007 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "emerexitlt"
-		(shape input)
-		(at 76.2 139.7 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "20c723e2-f866-41a5-abc5-649900fc0637")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.68 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ditchingfault"
-		(shape input)
-		(at 190.5 76.2 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "21d14aa2-914e-4cad-a249-0c27d232b2f3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 205.5197 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "modesel"
-		(shape input)
-		(at 38.1 139.7 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "257cc1c1-79bd-4971-b675-45825728a47d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.947 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
 		)
+		(uuid "fb313c9e-4dde-42f7-8c87-8b5b99ea35f5")
 	)
 	(global_label "eng2aice"
 		(shape input)
-		(at 190.5 38.1 0)
+		(at 167.64 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1622,31 +1772,9 @@
 			)
 			(justify left)
 		)
-		(uuid "31c326a4-589c-419f-92eb-6a224a11f600")
+		(uuid "019a0d1b-40e4-4201-90bb-f7f9d1b7570c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 202.0123 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "spareon"
-		(shape input)
-		(at 76.2 50.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "35a11feb-e537-46e6-be26-00a757eb5e2a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.6841 50.8 0)
+			(at 179.1523 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1658,117 +1786,51 @@
 	)
 	(global_label "probewindowfault"
 		(shape input)
-		(at 38.1 76.2 0)
+		(at 38.1 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "36e319f2-a8bb-4408-ad96-bf21a911dff7")
+		(uuid "03d4d026-da3e-4945-916c-1c3bebf669d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.5344 76.2 0)
+			(at 18.6656 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "apumasteron"
+	(global_label "ditchingfault"
 		(shape input)
-		(at 76.2 101.6 0)
+		(at 152.4 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "385874e4-535d-494a-9c52-8a6cbeae8159")
+		(uuid "06b3f22b-c481-473b-92be-13acefbde70e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.4011 101.6 0)
+			(at 137.3803 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "eng2aiceon"
-		(shape input)
-		(at 190.5 50.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3f3eb97e-35d8-463a-861b-c4d7b84e15c6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 204.3103 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "apustart"
-		(shape input)
-		(at 152.4 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3f79c258-a419-4c9e-b443-a332b9481ea4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.2469 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "wingaice"
-		(shape input)
-		(at 38.1 38.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4bf9c5b9-e028-4914-9ff6-2c3cf6acfdc8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.2495 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "spare"
 		(shape input)
-		(at 76.2 38.1 0)
+		(at 91.44 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1776,9 +1838,9 @@
 			)
 			(justify left)
 		)
-		(uuid "6eadbc0e-c5d0-40f4-ac48-c46e73cad587")
+		(uuid "0724dc95-d190-4509-addc-25b90d4f1cc3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.3861 38.1 0)
+			(at 99.6261 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1788,53 +1850,53 @@
 			)
 		)
 	)
-	(global_label "eng2aicefault"
+	(global_label "wingaicefault"
 		(shape input)
-		(at 190.5 25.4 0)
+		(at 38.1 25.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "710cb8a7-7bf5-423a-bfc7-3681d7827ce9")
+		(uuid "0ac8621d-33af-4d47-87a2-9022e5f904a3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 206.4269 25.4 0)
+			(at 22.5359 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "apustarton"
+	(global_label "apumasterfault"
 		(shape input)
-		(at 152.4 101.6 0)
+		(at 76.2 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "729ab135-0e82-484f-acc7-a7cacdc22a1f")
+		(uuid "0b81cf28-99b0-46b9-9f08-54ba12aaaeac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.5449 101.6 0)
+			(at 58.8823 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "apumaster"
+	(global_label "emerexitlt"
 		(shape input)
-		(at 76.2 88.9 0)
+		(at 91.44 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1842,53 +1904,9 @@
 			)
 			(justify left)
 		)
-		(uuid "764d0204-bcf9-4326-b39a-d48c9d71848c")
+		(uuid "0bf6b1b6-2498-4f92-a614-209349f2f4da")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.1031 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "emerexitltoff"
-		(shape input)
-		(at 76.2 152.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "783a3cd4-1d7c-46e8-a27a-1d6197e88cae")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.2804 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "wingaiceon"
-		(shape input)
-		(at 38.1 50.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8e676a88-19b2-4c4e-b5d4-d8ef4f9cef52")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 51.5475 50.8 0)
+			(at 103.92 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1900,7 +1918,7 @@
 	)
 	(global_label "eng1aice"
 		(shape input)
-		(at 152.4 38.1 0)
+		(at 129.54 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1908,9 +1926,185 @@
 			)
 			(justify left)
 		)
-		(uuid "9254378d-bd15-4c1b-a79b-d88735238694")
+		(uuid "160801e0-3bb8-4731-8958-fbfb5732a72c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.9123 38.1 0)
+			(at 141.0523 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "apustart"
+		(shape input)
+		(at 129.54 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1c5996ff-b0d5-4eae-b218-1062b5b58fae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 140.3869 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "apumaster"
+		(shape input)
+		(at 91.44 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "217412f5-15b6-4b7d-8627-d8cfef7b57a2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.3431 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "eng2aicefault"
+		(shape input)
+		(at 152.4 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "245429dd-f5d6-4ff2-a19e-de2ad5bcb72f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 136.4731 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ditchingfault"
+		(shape input)
+		(at 38.1 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2565df45-9d88-436f-a0f0-4d5823cdf037")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 23.0803 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "eng1aiceon"
+		(shape input)
+		(at 114.3 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2e88e9ed-b876-422b-a915-dec8be93c4bb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.4897 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "probewindowoff"
+		(shape input)
+		(at 38.1 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2f9ede6f-9118-40ed-9e79-0999f330e7e0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.4798 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "eng1aicefault"
+		(shape input)
+		(at 114.3 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4bd30cad-d015-46c7-87ba-f4a9c150693a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.3731 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "wingaice"
+		(shape input)
+		(at 53.34 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4bf9c5b9-e028-4914-9ff6-2c3cf6acfdc8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.4895 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1922,7 +2116,7 @@
 	)
 	(global_label "probewindow"
 		(shape input)
-		(at 38.1 88.9 0)
+		(at 53.34 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1930,131 +2124,87 @@
 			)
 			(justify left)
 		)
-		(uuid "995b52f8-570c-43fd-a4fd-cc046e8d8bc1")
+		(uuid "5b4f7def-3ff4-4b3c-b4ec-6476838241d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1198 88.9 0)
+			(at 68.3598 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ditchingon"
+		(shape input)
+		(at 152.4 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6b7dbe8b-6db2-4894-b800-c8bcf490fdc8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.4969 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "apustartfault"
 		(shape input)
-		(at 152.4 76.2 0)
+		(at 114.3 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "995b935d-044d-4610-8c1b-67795d892936")
+		(uuid "70812236-d580-4754-85b1-78ddffcac251")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.6615 76.2 0)
+			(at 99.0385 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "emerexitltfault"
-		(shape input)
-		(at 76.2 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9bc79cd4-4f37-4378-b0c6-19f60c84a854")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.0946 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "probewindowoff"
-		(shape input)
-		(at 38.1 101.6 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b90af6ac-4f11-451b-988d-fccdfbdf54de")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.7202 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "modeselon"
 		(shape input)
-		(at 38.1 152.4 0)
+		(at 38.1 152.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "bc38f075-6b5e-46a0-86f4-fff12629b9a6")
+		(uuid "70975b3c-a417-4212-a86c-25948fbf6d3d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 51.245 152.4 0)
+			(at 24.955 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "eng1aiceon"
-		(shape input)
-		(at 152.4 50.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c2b2b1b4-d88a-468a-89d1-3e4e8cba611e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.2103 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "ditching"
 		(shape input)
-		(at 190.5 88.9 0)
+		(at 167.64 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2062,9 +2212,9 @@
 			)
 			(justify left)
 		)
-		(uuid "c796d36a-6bfe-4e57-be29-9f6246c6af27")
+		(uuid "7555fadf-ec51-4e05-a6e7-319329345f09")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.1051 88.9 0)
+			(at 178.2451 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2074,9 +2224,141 @@
 			)
 		)
 	)
-	(global_label "apumasterfault"
+	(global_label "eng2aiceon"
 		(shape input)
-		(at 76.2 76.2 0)
+		(at 152.4 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "894c9d6d-ee47-4596-b2e8-7ef26369d5fe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.5897 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "wingaiceon"
+		(shape input)
+		(at 38.1 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8e676a88-19b2-4c4e-b5d4-d8ef4f9cef52")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 24.6525 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "sparefault"
+		(shape input)
+		(at 76.2 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "903c96d2-172b-48e2-9ede-436c347a3411")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.5993 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "apumasteron"
+		(shape input)
+		(at 76.2 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9c1240cc-be9b-4ea0-afc3-9fd709f9877b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.9989 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "emerexitltoff"
+		(shape input)
+		(at 76.2 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ce3f556a-8ad6-4228-8f8c-76e6b89f3016")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 61.1196 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "apustarton"
+		(shape input)
+		(at 114.3 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1da3b2c-699d-4709-862d-c4b1265d01ba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.1551 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "modesel"
+		(shape input)
+		(at 53.34 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2084,9 +2366,9 @@
 			)
 			(justify left)
 		)
-		(uuid "e9d78db1-a1ac-40b8-a246-f7240c1cf9a2")
+		(uuid "e3bb512e-8c89-44e8-91fb-3021fa344b48")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.5177 76.2 0)
+			(at 64.187 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2096,154 +2378,62 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 29.21 76.2 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
+	(global_label "spareon"
+		(shape input)
+		(at 76.2 50.8 180)
 		(fields_autoplaced yes)
-		(uuid "01cedd9e-fa1e-43ed-b21c-a3a63140ba8b")
-		(property "Reference" "PROBEWINDOWFAULT1"
-			(at 30.7975 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Value" "LED"
-			(at 30.7975 71.12 0)
+		(uuid "e6a771be-21e8-4805-9d51-13ff2fd5809c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 65.7159 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify right)
 				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 29.21 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "21c6b803-f95d-42fa-836b-cb3bfc91f0b9")
-		)
-		(pin "1"
-			(uuid "3809c1e8-140f-42df-a0ad-6140fe3a3d3e")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "PROBEWINDOWFAULT1")
-					(unit 1)
-				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 143.51 76.2 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
+	(global_label "emerexitltfault"
+		(shape input)
+		(at 76.2 127 180)
 		(fields_autoplaced yes)
-		(uuid "0b6e0206-4362-4138-8c6a-f4ea669f6f99")
-		(property "Reference" "APUSTARTFAULT1"
-			(at 145.0975 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Value" "LED"
-			(at 145.0975 71.12 0)
+		(uuid "e6e8c289-9874-46c9-90f6-34e059a0e193")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 59.3054 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify right)
 				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 143.51 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b4cfd429-d763-4a05-b444-fc0bb36d1f22")
-		)
-		(pin "1"
-			(uuid "9d901666-e843-4447-99f8-742643dfbb5a")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "APUSTARTFAULT1")
-					(unit 1)
-				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 137.16 22.86 0)
+		(at 91.44 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0e1ac7e5-7bc3-4275-9c16-e8e82afc2cd7")
-		(property "Reference" "#PWR057"
-			(at 137.16 26.67 0)
+		(uuid "06bf63a6-39ae-4811-9410-e1cf1139c291")
+		(property "Reference" "#PWR051"
+			(at 91.44 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2252,7 +2442,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 137.16 17.78 0)
+			(at 91.44 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2260,7 +2450,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 22.86 0)
+			(at 91.44 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2269,7 +2459,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 22.86 0)
+			(at 91.44 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2278,7 +2468,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 137.16 22.86 0)
+			(at 91.44 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2287,216 +2477,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d0d06463-0ec8-4980-8023-51dafe20d837")
+			(uuid "29df47a5-5427-4deb-8baa-9b49d2928755")
 		)
 		(instances
 			(project "a320-overhead-lights"
 				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 67.31 76.2 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "14349ebf-6b70-46f0-aad3-5a0e524adabf")
-		(property "Reference" "APUMASTERFAULT1"
-			(at 68.8975 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 68.8975 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 67.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ec2d4bdd-4679-4a7a-be0d-cfc5964d0ae7")
-		)
-		(pin "1"
-			(uuid "1b1fa285-644a-4b01-b32c-76b8cebe8f5a")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "APUMASTERFAULT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 29.21 152.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "14705e5e-76cf-46e0-8e34-615eff0ffd01")
-		(property "Reference" "MODESELON1"
-			(at 30.7975 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 30.7975 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 29.21 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4c6fe5dc-33ed-4346-9ce2-99c3509927bd")
-		)
-		(pin "1"
-			(uuid "a2e1eaf8-3456-43b6-b200-5a200c8cd1b2")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "MODESELON1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 29.21 127 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15116e61-465d-478a-b6ea-93fa669138af")
-		(property "Reference" "MODESELFAULT1"
-			(at 30.7975 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 30.7975 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 29.21 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3ee89cbe-1e39-4056-84e2-ef65a0004219")
-		)
-		(pin "1"
-			(uuid "43103e71-dfbe-4dec-a543-f30da3d7a862")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "MODESELFAULT1")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -2504,2624 +2490,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 60.96 124.46 0)
+		(at 129.54 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "173d9c93-4d2d-45ec-96a4-1a5f5d0eeede")
-		(property "Reference" "#PWR053"
-			(at 60.96 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 60.96 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 60.96 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "359d5467-e910-4af0-b2c7-e0473e172829")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 67.31 101.6 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1c260b21-fe7c-49af-89ff-76de13a27049")
-		(property "Reference" "APUMASTERON1"
-			(at 68.8975 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 68.8975 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 67.31 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c4ad4e76-d36c-4a6a-b445-db6b313434d7")
-		)
-		(pin "1"
-			(uuid "eb142539-8382-4037-b3f3-491fbf8a85ea")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "APUMASTERON1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 17.78 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1cb483d2-6bba-488e-a7a5-c6318601237e")
-		(property "Reference" "#PWR037"
-			(at 17.78 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 17.78 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 17.78 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 17.78 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 17.78 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f9d0485a-65fb-441d-ab8a-d70f01d2a6da")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 22.86 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d5cb549-0f70-4513-874b-030cc6215242")
-		(property "Reference" "#PWR041"
-			(at 22.86 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 22.86 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5918f9d0-9f02-4e55-aac5-39c7a5d78867")
-		)
-		(instances
-			(project ""
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 22.86 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2266c703-48d1-49a7-9871-1acb4ab74e94")
-		(property "Reference" "#PWR044"
-			(at 22.86 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 22.86 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 22.86 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a169e09f-eb33-4908-bdbb-b00b732e9b22")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 143.51 50.8 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29491226-ce58-41f5-a8f2-94be5c2bb560")
-		(property "Reference" "ENG1AICEON1"
-			(at 145.0975 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 145.0975 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 143.51 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ab38ca81-125d-465d-93f3-21e8aeb5a6ef")
-		)
-		(pin "1"
-			(uuid "ab03673b-60fa-4974-91be-d2d46a243d90")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "ENG1AICEON1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 55.88 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "325840af-0534-4e83-ba73-0ee536a4ba7e")
-		(property "Reference" "#PWR047"
-			(at 55.88 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 55.88 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 55.88 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4da99183-1d10-4652-ae94-97556538ba5d")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 60.96 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "35dc551e-5863-4862-aa3f-bad87535d5d3")
-		(property "Reference" "#PWR049"
-			(at 60.96 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 60.96 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 60.96 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dcb612f5-4c99-4045-bfb8-90f4a504986d")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 182.88 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "383b4d7b-57ec-45fd-a9aa-357a49ba07aa")
-		(property "Reference" "ENG2AICE1"
-			(at 182.88 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 182.88 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 182.88 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cbab560c-3dad-424d-9dfe-65783258b3c1")
-		)
-		(pin "1"
-			(uuid "efa87548-8725-4741-8bd2-f0211ab3da5c")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "ENG2AICE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 22.86 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b4f3694-0fc1-4ab4-a3c8-b2f4d68f98c2")
-		(property "Reference" "#PWR043"
-			(at 22.86 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 22.86 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b71c5c5b-87ce-47cc-adbc-24f4455e8151")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 137.16 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3e6a778d-7008-45ad-9d6f-76f5751358de")
-		(property "Reference" "#PWR060"
-			(at 137.16 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 137.16 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "901e6283-bcb1-4753-850c-55b2b40df292")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 22.86 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "408c45c5-9b4d-42c1-b1b4-1af81b71b5a9")
-		(property "Reference" "#PWR045"
-			(at 22.86 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 22.86 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "848bedf6-c0d0-4a53-b40f-154204ccb246")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 29.21 25.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "421d3cbb-85fc-40c1-96a2-d847edecf1dc")
-		(property "Reference" "WINGAICEFAULT1"
-			(at 30.7975 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 30.7975 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 29.21 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c02b020a-80bd-4774-b58a-4e5c1d84bd39")
-		)
-		(pin "1"
-			(uuid "a7d3f3e7-b81c-427b-9b91-ee705cac299d")
-		)
-		(instances
-			(project ""
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "WINGAICEFAULT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 144.78 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "45a1b209-4670-452d-b7e2-4159a597b4d3")
-		(property "Reference" "ENG1AICE1"
-			(at 144.78 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 144.78 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 144.78 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a64bdec5-ce76-47eb-a57a-e20eb29fe475")
-		)
-		(pin "1"
-			(uuid "bd9ce2bb-c61c-4bc0-852e-ad958a6520f0")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "ENG1AICE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 182.88 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f382c92-f54b-4672-8d23-870bfc8fc875")
-		(property "Reference" "DITCHING1"
-			(at 182.88 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 182.88 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 182.88 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0b0d8195-e1b0-4e79-b6f5-54dba33b97e5")
-		)
-		(pin "1"
-			(uuid "d55d30b4-0088-4d93-885c-28d1048ca6c8")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "DITCHING1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 60.96 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5099fdf5-0325-4a36-b0cc-cd1cf7314ad0")
-		(property "Reference" "#PWR050"
-			(at 60.96 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "34a4a6ff-26df-48a9-9d11-0f36b6fe4120")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 175.26 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "51326f6f-5c52-4ffd-9f94-47bd42f889f7")
-		(property "Reference" "#PWR063"
-			(at 175.26 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 175.26 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 175.26 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "da798a1b-5fd7-4ef2-bc3a-8b2e49165a8c")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR063")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 175.26 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "51753d89-6c7b-48b8-bfd3-3ea0b4ac6252")
-		(property "Reference" "#PWR064"
-			(at 175.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 175.26 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6b8920bf-a796-4936-90fc-717e46b9ec71")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 181.61 76.2 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52450097-824b-4a68-b2b2-346e2723465a")
-		(property "Reference" "DITCHINGFAULT1"
-			(at 183.1975 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 183.1975 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.61 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 181.61 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2bf1e607-d138-43f4-b782-ef824272d299")
-		)
-		(pin "1"
-			(uuid "fde5f92b-3604-4d32-8c2a-fd49eeec7ad3")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "DITCHINGFAULT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 67.31 25.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52e962f8-e1ff-46f6-a4c6-e65b29b871b3")
-		(property "Reference" "SPAREFAULT1"
-			(at 68.8975 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 68.8975 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 67.31 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8beec375-2e25-4185-9a64-399beeeca6a5")
-		)
-		(pin "1"
-			(uuid "96132a35-3173-4db6-ab36-384c7a0b4428")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "SPAREFAULT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 175.26 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5654a583-226a-499a-a781-92ffc9b93215")
-		(property "Reference" "#PWR066"
-			(at 175.26 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 175.26 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "98e8e21c-bbb7-4d33-a542-eedbad0a312a")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 181.61 25.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57e427ae-2c59-46f2-a032-a15c62715a6f")
-		(property "Reference" "ENG2AICEFAULT1"
-			(at 183.1975 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 183.1975 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.61 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 181.61 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7239dac2-77a8-42c4-9c4b-14495b0c9a91")
-		)
-		(pin "1"
-			(uuid "01a25e17-6b78-4658-89da-adf868b8161c")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "ENG2AICEFAULT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 22.86 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58c2bdec-edad-4fc2-bdb8-63627a98dd09")
-		(property "Reference" "#PWR042"
-			(at 22.86 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 22.86 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 22.86 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e2f8f7a-ee37-4bd1-b213-98ad2761aefc")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 144.78 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ed85623-b112-4c41-b1d5-97435809388b")
-		(property "Reference" "APUSTART1"
-			(at 144.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 144.78 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 144.78 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "46295347-59e8-4a88-9dd7-ae672b39b337")
-		)
-		(pin "1"
-			(uuid "b6e42653-4155-42ed-af4c-02ccfa09f35b")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "APUSTART1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 17.78 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "631b2df4-a1c5-4584-b5bc-c5747451b53e")
-		(property "Reference" "#PWR038"
-			(at 17.78 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 17.78 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 17.78 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 17.78 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 17.78 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3d5e362a-aff5-4db7-90e2-2a54c03a7ac5")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 30.48 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64439e08-e9f0-45e6-9cb3-c7756537fd9e")
-		(property "Reference" "WINGAICE1"
-			(at 30.48 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 30.48 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 30.48 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c5b01dd7-6000-41a5-b387-5d63e047f4e4")
-		)
-		(pin "1"
-			(uuid "64c45209-fabd-4f45-b737-98b03a08adfe")
-		)
-		(instances
-			(project ""
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "WINGAICE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 17.78 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "75f00037-a665-4c9e-89d7-81c5ae6b5568")
-		(property "Reference" "#PWR039"
-			(at 17.78 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 17.78 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 17.78 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 17.78 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 17.78 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "40bb746a-5b23-4bbe-9a62-0e148730953d")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 22.86 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "79f6910e-f8eb-472f-8dbb-841f0c3f46b3")
-		(property "Reference" "#PWR040"
-			(at 22.86 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 22.86 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 22.86 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7981d878-6887-4743-bf34-76cf63f4e7c1")
-		)
-		(instances
-			(project ""
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 29.21 50.8 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "84ce37a0-4655-4130-9d71-315d658ab08e")
-		(property "Reference" "WINGAICEON1"
-			(at 30.7975 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 30.7975 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 29.21 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8f1ac9db-d257-4835-ad17-f8dbddb13dde")
-		)
-		(pin "1"
-			(uuid "715a0811-d61e-4be6-b4c1-c773c21613f6")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "WINGAICEON1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 60.96 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87e632df-a80b-4a90-9768-97efafc22689")
-		(property "Reference" "#PWR052"
-			(at 60.96 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "05685da7-9cb1-44ff-a61c-8dd79271af48")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 30.48 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "965e855a-06c4-470e-8c86-ccdd45e296a4")
-		(property "Reference" "PROBEWINDOW1"
-			(at 30.48 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 30.48 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 30.48 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "499e208c-33f0-40cc-9149-31c396bf2305")
-		)
-		(pin "1"
-			(uuid "2be5cabb-1de6-41d5-a42d-60dfd235ffe6")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "PROBEWINDOW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 181.61 101.6 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9dc99ef1-72a1-45dd-b137-a9c7cfcb0a82")
-		(property "Reference" "DITCHINGON1"
-			(at 183.1975 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 183.1975 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.61 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 181.61 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "553569cf-3ba6-4767-9b25-5c43eecf1580")
-		)
-		(pin "1"
-			(uuid "857d8361-ec1f-4b46-afd1-2b2c2004e54e")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "DITCHINGON1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 67.31 127 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a02536fc-f4ac-4d55-a022-c739e826786a")
-		(property "Reference" "EMEREXITLTFAULT1"
-			(at 68.8975 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 68.8975 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 67.31 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6d769884-dc91-4c0d-8657-7ccef3e64fe6")
-		)
-		(pin "1"
-			(uuid "4c59443c-924b-4cd8-af8b-91a87a0e98b9")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "EMEREXITLTFAULT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 170.18 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6acfd2b-e7ed-4c80-9f77-a4cba4130a93")
-		(property "Reference" "#PWR062"
-			(at 170.18 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 170.18 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 170.18 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b818329c-4478-492b-b8ab-31f0c50de6e1")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 175.26 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a8248c5d-00de-463b-8b2a-276ea9eeb251")
-		(property "Reference" "#PWR065"
-			(at 175.26 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 175.26 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 175.26 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e16abfc4-06c5-406a-95b7-f73df0307648")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 181.61 50.8 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac37fd64-9be4-4a6e-b7e2-e3611f95ba50")
-		(property "Reference" "ENG2AICEON1"
-			(at 183.1975 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 183.1975 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.61 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 181.61 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "03fcf58f-419b-4f7e-91f9-c9c2812a5ff0")
-		)
-		(pin "1"
-			(uuid "4e01047e-6384-4d5f-88a6-6c35c76ca988")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "ENG2AICEON1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 170.18 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "afda0be4-e4f3-4c37-976d-d95381e268c6")
-		(property "Reference" "#PWR061"
-			(at 170.18 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 170.18 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 170.18 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "009e2c8c-80d3-4d1b-8eeb-ba026a6d55b0")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR061")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 29.21 101.6 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b47486c2-9123-4bd3-8345-d764bbb19beb")
-		(property "Reference" "PROBEWINDOWOFF1"
-			(at 30.7975 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 30.7975 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 29.21 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d8adea85-937c-4da9-b4a2-761caefcb23e")
-		)
-		(pin "1"
-			(uuid "e22e955a-30d3-4e0c-9ee4-328a2bc82e8d")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "PROBEWINDOWOFF1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 55.88 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4a710e8-fb4e-4e6c-9f2b-36fe47c1ef22")
-		(property "Reference" "#PWR048"
-			(at 55.88 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 55.88 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 55.88 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3db19023-d1fa-4749-bde7-fa61b16a2c25")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 137.16 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b940769b-eeac-4ed7-9ac0-2bdc2ace046b")
+		(uuid "131d1497-a280-4f77-b7d5-10fecf4e5a57")
 		(property "Reference" "#PWR059"
-			(at 137.16 77.47 0)
+			(at 129.54 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5130,7 +2508,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 137.16 68.58 0)
+			(at 129.54 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5138,7 +2516,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 73.66 0)
+			(at 129.54 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5147,7 +2525,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 73.66 0)
+			(at 129.54 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5156,7 +2534,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 137.16 73.66 0)
+			(at 129.54 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5165,7 +2543,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e91338d7-43a3-4918-950a-305ce5ecc39c")
+			(uuid "f01c3218-9731-44f9-8be8-6049a6644e31")
 		)
 		(instances
 			(project "a320-overhead-lights"
@@ -5177,153 +2555,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 143.51 25.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc1314f4-0bbf-42d7-9435-a273e09cd579")
-		(property "Reference" "ENG1AICEFAULT1"
-			(at 145.0975 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 145.0975 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 143.51 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b57cbeb0-24fe-49a3-90b7-8cd156b6ed1e")
-		)
-		(pin "1"
-			(uuid "c62c3ccb-ca61-4af5-8b23-a6340d2ca807")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "ENG1AICEFAULT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 30.48 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be1cf8ae-899b-4afe-8cfe-aadb3eb96f56")
-		(property "Reference" "MODESEL1"
-			(at 30.48 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 30.48 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 30.48 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "80e1d124-7aff-4946-ac9a-6ec3f9969d73")
-		)
-		(pin "1"
-			(uuid "2ed33fba-2ae9-4896-bdcd-dbe198d9d64a")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "MODESEL1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 60.96 142.24 0)
+		(at 152.4 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c00ffc50-b828-42e8-afb4-c80067fa1c1e")
-		(property "Reference" "#PWR054"
-			(at 60.96 148.59 0)
+		(uuid "219e469e-2fd0-4ded-a654-0a753d7ff860")
+		(property "Reference" "#PWR061"
+			(at 152.4 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5332,7 +2574,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 147.32 0)
+			(at 152.4 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5340,7 +2582,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 142.24 0)
+			(at 152.4 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5349,7 +2591,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 142.24 0)
+			(at 152.4 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5358,7 +2600,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 142.24 0)
+			(at 152.4 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5367,37 +2609,38 @@
 			)
 		)
 		(pin "1"
-			(uuid "c379ad3b-b2ca-434c-99a6-9d587cc06a08")
+			(uuid "13b85329-0c90-42ac-84db-a08f7371ffac")
 		)
 		(instances
 			(project "a320-overhead-lights"
 				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR054")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 68.58 88.9 0)
+		(lib_id "power:+5V")
+		(at 53.34 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c13002ac-dadc-4c19-8783-3e11c8afe3c4")
-		(property "Reference" "APUMASTER1"
-			(at 68.58 81.28 0)
+		(uuid "28d277eb-df4d-4d51-ae57-e075dfbd9290")
+		(property "Reference" "#PWR041"
+			(at 53.34 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 68.58 83.82 0)
+		(property "Value" "+5V"
+			(at 53.34 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5405,7 +2648,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 83.82 0)
+			(at 53.34 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5413,8 +2656,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 68.58 83.82 0)
+		(property "Datasheet" ""
+			(at 53.34 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5422,67 +2665,701 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 68.58 88.9 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 53.34 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "52dce4f1-e0be-4a1e-93e8-87ceae237eb4")
 		)
 		(pin "1"
-			(uuid "ede2ce54-f3de-4989-82ed-a1513cb9bddc")
+			(uuid "8ffe3079-c206-42a5-b766-42d9a68bf480")
 		)
 		(instances
 			(project "a320-overhead-lights"
 				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "APUMASTER1")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 68.58 139.7 0)
+		(lib_id "power:+5V")
+		(at 91.44 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c499895e-f48d-45e7-b55f-3dbea9075855")
+		(uuid "2afec361-4866-444e-b38b-beb083893d37")
+		(property "Reference" "#PWR053"
+			(at 91.44 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 91.44 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0eaa88dc-31f8-4fc4-942b-60bdd1ae3b2e")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 91.44 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36226bc8-4f56-4c4d-92d5-d1fde964938c")
+		(property "Reference" "#PWR049"
+			(at 91.44 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 91.44 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 91.44 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38dc8959-4d7a-427f-ba95-01d9d4851ff9")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f5f8523-46b7-4298-98df-45835edb07b3")
+		(property "Reference" "#PWR038"
+			(at 38.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a58dec12-cdcf-4ce1-a6fc-aaf19f1bed91")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 45.72 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a42f2a5-b99e-4b3c-9058-f7080f130dae")
+		(property "Reference" "WINGAICE1"
+			(at 44.323 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 44.323 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "a320:Korry Switch"
+			(at 45.72 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "980ee9d9-dade-4e56-a0ce-5fe83ebb9a07")
+		)
+		(pin "5"
+			(uuid "6fea10ad-ffb9-4250-ba8f-729db6bb38ab")
+		)
+		(pin "10"
+			(uuid "070f02ce-edb6-4ab2-aff5-b3ef356b87dc")
+		)
+		(pin "3"
+			(uuid "3e610e21-e9cd-40ad-9b1c-c3eb40dcd5eb")
+		)
+		(pin "6"
+			(uuid "fcf0cc1b-59de-495c-afec-d03860e0d997")
+		)
+		(pin "1"
+			(uuid "061ccc91-41a1-4355-9db5-1610ff5d7011")
+		)
+		(pin "2"
+			(uuid "50ebdf71-3602-414c-b26c-ba39a1b9f39d")
+		)
+		(pin "7"
+			(uuid "d146823a-fb91-4c14-9103-5c4818da6cb4")
+		)
+		(pin "4"
+			(uuid "051414ee-2ce0-40ca-96d5-015c18f59558")
+		)
+		(pin "9"
+			(uuid "f8595002-a23a-4297-8108-ea18c166f4be")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "WINGAICE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 91.44 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f865fc7-66d0-4f26-9697-d1ec37199753")
+		(property "Reference" "#PWR052"
+			(at 91.44 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 91.44 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 91.44 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e59e60f-220f-4495-a9f6-55e4167263ea")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 53.34 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50760e49-8191-4621-8ffc-0ee0014be4df")
+		(property "Reference" "#PWR045"
+			(at 53.34 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 53.34 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 53.34 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed58a213-5dcd-4777-bec3-aea30ca583f7")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 129.54 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50c65d09-d812-46ab-83a1-662a9f527170")
+		(property "Reference" "#PWR058"
+			(at 129.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 129.54 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 129.54 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc09a5fa-0d73-45d5-8c2a-daa015540361")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 45.72 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53d9cda3-efd5-424d-83ee-39d753aada54")
+		(property "Reference" "PROBEWINDOW1"
+			(at 44.323 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 44.323 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "a320:Korry Switch"
+			(at 45.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "cf4331b9-2ab2-4bf1-ac5d-cbb704b7499c")
+		)
+		(pin "5"
+			(uuid "eb5f2571-fa42-46d5-89e3-823cc3236e7e")
+		)
+		(pin "10"
+			(uuid "2d2f2596-0941-4449-b063-057d5950c69b")
+		)
+		(pin "3"
+			(uuid "a27c613f-627b-4dfb-94fb-1c8805223b51")
+		)
+		(pin "6"
+			(uuid "889e99af-d10e-4223-986e-b2767eb3f333")
+		)
+		(pin "1"
+			(uuid "b4c6f22c-7aa5-4191-b0c5-e2cf72fd6bdd")
+		)
+		(pin "2"
+			(uuid "7f6693e0-6e7e-47b0-8185-acd8d79e155f")
+		)
+		(pin "7"
+			(uuid "eb273ba6-2f0e-46a2-8471-755f6f69fd56")
+		)
+		(pin "4"
+			(uuid "ce22b6d4-d084-476c-946b-10690450507b")
+		)
+		(pin "9"
+			(uuid "99710d14-7cd1-40b8-96e1-d1941e68e5c1")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "PROBEWINDOW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "549d2abe-8822-47bd-963d-37eba51d3102")
+		(property "Reference" "#PWR047"
+			(at 76.2 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6f6765a-fce1-4194-bce5-6ca462a7a40d")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 83.82 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55c14070-8bb9-4e58-b0fc-51374b3c9ed1")
 		(property "Reference" "ENGEMEREXITLT1"
-			(at 68.58 132.08 0)
+			(at 82.423 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 68.58 134.62 0)
+		(property "Value" "~"
+			(at 82.423 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 68.58 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 134.62 0)
+		(property "Footprint" "a320:Korry Switch"
+			(at 83.82 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5490,8 +3367,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 68.58 139.7 0)
+		(property "Datasheet" ""
+			(at 83.82 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5499,11 +3376,44 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "469cf587-c51c-4c7e-a6d4-3f99e4079eae")
+		(property "Description" ""
+			(at 83.82 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "102db8cf-658d-4d4c-ac80-09336ebcba71")
+		)
+		(pin "5"
+			(uuid "f47434ed-ec38-41c8-8e42-086ba0b48a11")
+		)
+		(pin "10"
+			(uuid "705f9890-5132-4dea-9224-3ed43f95126d")
+		)
+		(pin "3"
+			(uuid "4e548b93-2d11-4163-8628-7de23f72a839")
+		)
+		(pin "6"
+			(uuid "ab419576-4b37-4fbe-8801-c7582d4736d5")
 		)
 		(pin "1"
-			(uuid "e5b73373-6ff1-46ce-869e-c71eac4391cd")
+			(uuid "aec8f224-8123-447a-a2a3-8ab5e79556ec")
+		)
+		(pin "2"
+			(uuid "e2201939-ad0c-465b-8bc1-8ac397ba32ce")
+		)
+		(pin "7"
+			(uuid "a065f518-8c86-4909-af25-fb2af7357fef")
+		)
+		(pin "4"
+			(uuid "f6bd686a-acf9-4c4b-9b3e-db0eb9b52fbb")
+		)
+		(pin "9"
+			(uuid "b67ef659-3abf-4251-8a64-bfa04f7a1606")
 		)
 		(instances
 			(project "a320-overhead-lights"
@@ -5516,16 +3426,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 132.08 99.06 0)
+		(at 167.64 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d762a250-4b59-4328-96c0-031cc96e1e81")
-		(property "Reference" "#PWR056"
-			(at 132.08 102.87 0)
+		(uuid "58dbc239-d4d1-49b1-843a-7333ec681901")
+		(property "Reference" "#PWR064"
+			(at 167.64 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5534,7 +3444,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 132.08 93.98 0)
+			(at 167.64 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5542,7 +3452,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 99.06 0)
+			(at 167.64 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5551,7 +3461,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 99.06 0)
+			(at 167.64 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5560,7 +3470,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 132.08 99.06 0)
+			(at 167.64 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5569,12 +3479,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7201e559-ff93-475f-b2b4-f20d47ce2f7d")
+			(uuid "f9a020a3-c5c0-43f0-b1e2-91d1a40010bc")
 		)
 		(instances
 			(project "a320-overhead-lights"
 				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR056")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -5582,16 +3492,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 132.08 48.26 0)
+		(at 167.64 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "df2cb223-9858-4360-8c5b-0395d93d8c61")
-		(property "Reference" "#PWR055"
-			(at 132.08 52.07 0)
+		(uuid "598ddc9c-cede-4c0b-ad89-194233695a61")
+		(property "Reference" "#PWR065"
+			(at 167.64 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5600,7 +3510,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 132.08 43.18 0)
+			(at 167.64 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5608,7 +3518,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 48.26 0)
+			(at 167.64 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5617,7 +3527,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 48.26 0)
+			(at 167.64 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5626,7 +3536,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 132.08 48.26 0)
+			(at 167.64 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5635,12 +3545,170 @@
 			)
 		)
 		(pin "1"
-			(uuid "e3ce3771-0396-4a5a-920f-923733238f9a")
+			(uuid "552b1c8e-7e8e-4848-92ff-5e46b3364c5f")
 		)
 		(instances
 			(project "a320-overhead-lights"
 				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR055")
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 53.34 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59d00926-2bfc-4e69-9bae-173443fb6ba3")
+		(property "Reference" "#PWR043"
+			(at 53.34 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 53.34 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 53.34 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1a9f74b-0928-491c-887f-6357d085f97f")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 121.92 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a44203c-614d-4e17-89fd-7e57474ac9b5")
+		(property "Reference" "APUSTART1"
+			(at 120.523 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 120.523 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "a320:Korry Switch"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "777e9f2e-9d9f-4c9f-8bcb-e0852f0b4e18")
+		)
+		(pin "5"
+			(uuid "95c73cbb-3a82-4381-aac6-927c7c602462")
+		)
+		(pin "10"
+			(uuid "058448ac-1c09-43c6-bb52-91c5831159b7")
+		)
+		(pin "3"
+			(uuid "0f066e05-3036-4481-9437-0b1f1aae3222")
+		)
+		(pin "6"
+			(uuid "604e15f9-e369-43f5-b5fd-6f115aed1e33")
+		)
+		(pin "1"
+			(uuid "d949d78c-9352-4d9d-9d2d-f9c75a2258b8")
+		)
+		(pin "2"
+			(uuid "05d8dd39-e0a5-4cdd-96ed-02e2bcd7b3fc")
+		)
+		(pin "7"
+			(uuid "7b9d2666-1b0a-47af-ace5-af97e065996d")
+		)
+		(pin "4"
+			(uuid "2c09bd69-c51a-4cf5-99c0-dff1ee762b48")
+		)
+		(pin "9"
+			(uuid "7df2d583-fff2-4414-9107-c447094348c8")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "APUSTART1")
 					(unit 1)
 				)
 			)
@@ -5648,16 +3716,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 40.64 0)
+		(at 38.1 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e0b9945a-d44e-4a3f-9364-453cd7e46d22")
-		(property "Reference" "#PWR058"
-			(at 137.16 46.99 0)
+		(uuid "6356c56c-b833-42ed-a04e-aae37b87716d")
+		(property "Reference" "#PWR037"
+			(at 38.1 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5666,7 +3734,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 45.72 0)
+			(at 38.1 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5674,7 +3742,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 40.64 0)
+			(at 38.1 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5683,7 +3751,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 40.64 0)
+			(at 38.1 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5692,7 +3760,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 40.64 0)
+			(at 38.1 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5701,284 +3769,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "13a37587-0374-423d-adb5-4ae74be13780")
+			(uuid "3b641d66-341e-44a8-92bd-966cbfab4f63")
 		)
 		(instances
 			(project "a320-overhead-lights"
 				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 67.31 152.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7bc5212-95e6-460b-8702-af5f3bd3ec72")
-		(property "Reference" "EMEREXITLTOFF1"
-			(at 68.8975 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 68.8975 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 67.31 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "31236164-8d43-4d85-be45-4497149a4eb4")
-		)
-		(pin "1"
-			(uuid "63469293-e6f9-42b3-aebf-87ad42b6c7d6")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "EMEREXITLTOFF1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 143.51 101.6 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb5a3fa7-67b7-422f-94fd-092620c8edc2")
-		(property "Reference" "APUSTARTON1"
-			(at 145.0975 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 145.0975 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 143.51 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "40557aa7-0dbb-4e6a-876e-86d2e4def4e9")
-		)
-		(pin "1"
-			(uuid "2c697cf7-fee7-4a8d-a154-a79a49c9ecb3")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "APUSTARTON1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 68.58 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f02b5249-e2c1-428d-a186-620f203a780f")
-		(property "Reference" "SPARE1"
-			(at 68.58 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 68.58 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 68.58 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8645d729-6340-420a-b9e4-ac78d8b78fc7")
-		)
-		(pin "1"
-			(uuid "fd3cbe22-0837-4e23-99c9-fc4f3f436b81")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "SPARE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 67.31 50.8 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f256ec7c-3003-444a-ada5-8667adbdbb06")
-		(property "Reference" "SPAREON1"
-			(at 68.8975 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 68.8975 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 67.31 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b74888b3-b963-4e82-a669-624d4dadf822")
-		)
-		(pin "1"
-			(uuid "e2ff84b3-829c-4497-af80-bad6c95eb8b5")
-		)
-		(instances
-			(project "a320-overhead-lights"
-				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "SPAREON1")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -5986,16 +3782,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 55.88 48.26 0)
+		(at 53.34 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f83c69c0-8e59-41bf-852a-a2e0130e7206")
-		(property "Reference" "#PWR046"
-			(at 55.88 52.07 0)
+		(uuid "66d77520-8621-4329-94aa-79d7937a5b95")
+		(property "Reference" "#PWR044"
+			(at 53.34 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6004,7 +3800,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 55.88 43.18 0)
+			(at 53.34 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6012,7 +3808,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 48.26 0)
+			(at 53.34 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6021,7 +3817,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 48.26 0)
+			(at 53.34 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6030,7 +3826,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 55.88 48.26 0)
+			(at 53.34 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6039,7 +3835,745 @@
 			)
 		)
 		(pin "1"
-			(uuid "df6fa5ac-a821-46ee-b961-b23d7cdc1adf")
+			(uuid "59edf947-3d6f-4c45-b752-12830917cb3c")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 160.02 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a3c908e-325a-40fb-a467-0586be86ae25")
+		(property "Reference" "ENG2AICE1"
+			(at 158.623 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 158.623 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "a320:Korry Switch"
+			(at 160.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "108a9f8b-164d-4d1d-a9f5-fed3a807dc33")
+		)
+		(pin "5"
+			(uuid "724e27eb-6f31-4703-bc46-6489263bc539")
+		)
+		(pin "10"
+			(uuid "36d6ff1e-5a98-4431-85c8-19f990b5e06e")
+		)
+		(pin "3"
+			(uuid "2bf27fab-9a85-4477-ba5a-77e7b4bac960")
+		)
+		(pin "6"
+			(uuid "ac002997-5c83-4a1e-804d-9ee7938d05e8")
+		)
+		(pin "1"
+			(uuid "8b352ffc-982d-4438-b4b8-48ddc111403a")
+		)
+		(pin "2"
+			(uuid "4af3e5f9-0686-40af-b0f0-4a5a67b0ce19")
+		)
+		(pin "7"
+			(uuid "4a826edc-607b-4ae7-99d8-da655e3b4621")
+		)
+		(pin "4"
+			(uuid "36db7550-5b75-4c6b-8a2d-f46275ec9aa0")
+		)
+		(pin "9"
+			(uuid "72f1162f-c17e-413b-848b-855f9004b60a")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "ENG2AICE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79222c70-13e7-4405-8b03-2b2e0300c977")
+		(property "Reference" "#PWR048"
+			(at 76.2 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59c874e6-bc84-4b43-901d-483cbe18700d")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 129.54 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "865f23a4-67c7-4839-8e25-a6829423f474")
+		(property "Reference" "#PWR057"
+			(at 129.54 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 129.54 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 129.54 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7182302b-2088-4e8d-bd35-c0e4967eae61")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 167.64 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e0e0131-9f4d-4030-b1f0-36a5f849e5f8")
+		(property "Reference" "#PWR063"
+			(at 167.64 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 167.64 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 167.64 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7f9bed1-cace-43ae-9be9-7c4dd04f4910")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 167.64 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c7cbb59-f43b-4a3b-b4fa-78fc4029b954")
+		(property "Reference" "#PWR066"
+			(at 167.64 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 167.64 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf15706c-873d-4349-8ea1-8f05d7705bc6")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 53.34 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d831ace-ef77-4a67-9eb9-d80f53dc47f7")
+		(property "Reference" "#PWR040"
+			(at 53.34 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 53.34 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 53.34 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc731a27-f6f9-4705-8e75-62497a7146b6")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 45.72 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a634a8c6-2bbf-4706-afa4-a19b87bded55")
+		(property "Reference" "MODESELFAULT1"
+			(at 44.323 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 44.323 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "a320:Korry Switch"
+			(at 45.72 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "f24dc9c1-f153-4ba7-a394-af7422f4f7a0")
+		)
+		(pin "5"
+			(uuid "8f9c95c7-0a43-4d4e-bcf4-6ae0758edbb8")
+		)
+		(pin "10"
+			(uuid "534d686d-3782-4d8e-9929-20e10922955c")
+		)
+		(pin "3"
+			(uuid "f7a07c51-0f11-4446-9896-33315beef16b")
+		)
+		(pin "6"
+			(uuid "d3af49bd-5627-4fd4-99c4-baa73b1a6133")
+		)
+		(pin "1"
+			(uuid "a9e3bbe3-543a-44fc-a01a-2e57052ce2ef")
+		)
+		(pin "2"
+			(uuid "39f408c2-1e78-429e-8bd6-00b51be28e7d")
+		)
+		(pin "7"
+			(uuid "504e5794-de73-4d70-83a2-c3766675d700")
+		)
+		(pin "4"
+			(uuid "d4334b1c-5390-46fb-b8cb-534c8d08f646")
+		)
+		(pin "9"
+			(uuid "e56f6375-a8ae-47bd-b49c-3f32910ed491")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "MODESELFAULT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 53.34 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a65b8a65-71ca-4fc0-8f00-944c57d524a9")
+		(property "Reference" "#PWR042"
+			(at 53.34 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 53.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 53.34 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f99c5152-ec55-49f9-b62a-c7724f0ed380")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 121.92 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a72a0efa-f7de-4c66-bf4d-ffc2cbb60335")
+		(property "Reference" "ENG1AICE1"
+			(at 120.523 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 120.523 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "a320:Korry Switch"
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "3d557335-c731-4f05-a772-6d1f29967939")
+		)
+		(pin "5"
+			(uuid "d80e0be1-04b4-4422-a8bc-8fb52cb58d75")
+		)
+		(pin "10"
+			(uuid "469390dd-2a13-4a99-944b-f0b8782c9caf")
+		)
+		(pin "3"
+			(uuid "99c30e8c-af50-42fa-bcda-bfa07e4005be")
+		)
+		(pin "6"
+			(uuid "f1960d8d-7382-4706-8bcc-cab80281277e")
+		)
+		(pin "1"
+			(uuid "96b8ba08-87e3-4a22-abb2-d13974b68886")
+		)
+		(pin "2"
+			(uuid "6f207ca5-536d-4552-bef6-35f0b0165e21")
+		)
+		(pin "7"
+			(uuid "3200f343-9e88-42c8-b068-6b9b7c48dd21")
+		)
+		(pin "4"
+			(uuid "f05d4bcd-fb03-444a-b0c1-5f55ac3906aa")
+		)
+		(pin "9"
+			(uuid "db45932a-f289-4406-b5e8-c56104c8283e")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "ENG1AICE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b588c14f-8502-4662-ad6b-bea2a3a07497")
+		(property "Reference" "#PWR046"
+			(at 76.2 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0bd51d0-995a-4ae3-9fea-6adacf4fffad")
 		)
 		(instances
 			(project "a320-overhead-lights"
@@ -6051,17 +4585,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 60.96 73.66 0)
+		(lib_id "power:GND")
+		(at 38.1 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fee1f226-f60d-4113-a384-2fb1429fe054")
-		(property "Reference" "#PWR051"
-			(at 60.96 77.47 0)
+		(uuid "b7ff5413-3111-47da-9856-d8341ba616d4")
+		(property "Reference" "#PWR039"
+			(at 38.1 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6069,8 +4603,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 60.96 68.58 0)
+		(property "Value" "GND"
+			(at 38.1 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6078,7 +4612,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 73.66 0)
+			(at 38.1 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6087,7 +4621,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 73.66 0)
+			(at 38.1 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6095,8 +4629,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 60.96 73.66 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6105,12 +4639,684 @@
 			)
 		)
 		(pin "1"
-			(uuid "79e22e51-3855-4660-8ef1-e14cb3932cb4")
+			(uuid "49e78088-895e-4c5f-9908-18d20610dd7a")
 		)
 		(instances
 			(project "a320-overhead-lights"
 				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
-					(reference "#PWR051")
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 160.02 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3f62029-11a0-4962-82bb-aa01bcc0463e")
+		(property "Reference" "DITCHING1"
+			(at 158.623 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 158.623 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "a320:Korry Switch"
+			(at 160.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e5eb8edb-4f74-4ebb-999d-1aaa1385ba5b")
+		)
+		(pin "5"
+			(uuid "64ce96a8-ac1d-4f6d-8753-1dec6741a8c3")
+		)
+		(pin "10"
+			(uuid "3a9be50a-3794-45b6-b2da-9b63edec24ab")
+		)
+		(pin "3"
+			(uuid "a3da5f0d-c109-4548-ab95-e0c7cbef8535")
+		)
+		(pin "6"
+			(uuid "c4c0fd39-4bf4-4d8e-beb0-d1b8895b85b2")
+		)
+		(pin "1"
+			(uuid "f13a8b39-a629-474b-9ad8-7c6ffa2bcdee")
+		)
+		(pin "2"
+			(uuid "311bca41-7f99-4dea-a965-9a8dcb4d5d6e")
+		)
+		(pin "7"
+			(uuid "03a6836f-0804-42d2-8178-5bf08f74bb91")
+		)
+		(pin "4"
+			(uuid "9ed581ed-6376-4aca-be84-1cc7670d8ddc")
+		)
+		(pin "9"
+			(uuid "c1f832ce-9022-4d8f-8ce5-3d426b047553")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "DITCHING1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 91.44 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0cb5765-c767-434f-b902-7495a25b4b3f")
+		(property "Reference" "#PWR054"
+			(at 91.44 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 91.44 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 91.44 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2954bf7e-da66-4490-8ad1-0ffbc12978ec")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd4d2168-e93c-4bc1-bc0c-1fd2454b3148")
+		(property "Reference" "#PWR062"
+			(at 152.4 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef5d6a30-1e3b-4bd6-bbcb-a62d96825fc7")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 91.44 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df745a94-79e0-43fb-aa9e-cd418446ef1a")
+		(property "Reference" "#PWR050"
+			(at 91.44 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 91.44 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 91.44 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8785304b-26a4-42cb-a412-078755dd7644")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 83.82 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e742ce5b-49f7-46c3-bb9d-dcdfe263d3ed")
+		(property "Reference" "SPARE1"
+			(at 82.423 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 82.423 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "a320:Korry Switch"
+			(at 83.82 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "1e7c92b0-1d70-43ff-a13a-2e4f9e4ebf90")
+		)
+		(pin "5"
+			(uuid "42ed4867-d479-484c-bf52-e3429f6c57ad")
+		)
+		(pin "10"
+			(uuid "d9e55d3a-bde1-4f53-bc18-9feb061d360a")
+		)
+		(pin "3"
+			(uuid "1d6a1474-798a-4a0b-bef2-3508f74a8aa3")
+		)
+		(pin "6"
+			(uuid "86c9f330-91f1-446e-99ad-129528b5d688")
+		)
+		(pin "1"
+			(uuid "fabd785b-1bc3-40c8-a66d-372d64ec0aea")
+		)
+		(pin "2"
+			(uuid "a5f2cecc-1203-433c-8baa-ae23923a3c97")
+		)
+		(pin "7"
+			(uuid "861484da-6db4-4fbc-b97f-c008e197fd3f")
+		)
+		(pin "4"
+			(uuid "a0552b0d-563e-4b84-817b-9cdd9d1d4299")
+		)
+		(pin "9"
+			(uuid "e7319813-5c5d-4aa0-824f-f589813c20ef")
+		)
+		(instances
+			(project ""
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "SPARE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 129.54 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e98d143e-d99b-4306-9234-84562c353a2a")
+		(property "Reference" "#PWR060"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 129.54 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 129.54 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d938279-6c35-4b7a-8210-eb730e33811c")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6ec860d-ebb5-49c8-bdd2-25dc8a80b5b1")
+		(property "Reference" "#PWR056"
+			(at 114.3 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e65ffb3-bc39-43f3-b6ed-3e28cf99250e")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8079ccf-108a-4429-83fd-84f003cfcf50")
+		(property "Reference" "#PWR055"
+			(at 114.3 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c776bcbc-f0cb-4986-a7a7-96428bab81f3")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a320:Korry_Switch")
+		(at 83.82 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9883f61-a745-415f-817e-b09e86ee0072")
+		(property "Reference" "APUMASTER1"
+			(at 82.423 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 82.423 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "a320:Korry Switch"
+			(at 83.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "49d4b557-06c7-4e18-9ce6-07cf779d8135")
+		)
+		(pin "5"
+			(uuid "188c9ed1-196d-4811-8250-e7329bc5d49b")
+		)
+		(pin "10"
+			(uuid "1139c3f2-df1c-4f69-b048-e328046421a8")
+		)
+		(pin "3"
+			(uuid "07dc8f28-3cd0-46d5-8e39-78c0abca351d")
+		)
+		(pin "6"
+			(uuid "67fb8c8c-0627-4aab-b698-a0bbe578292b")
+		)
+		(pin "1"
+			(uuid "01774857-c264-4c64-8e8d-42f557b3c4e1")
+		)
+		(pin "2"
+			(uuid "1e92b394-33fc-4208-ae19-a54c29b3c67e")
+		)
+		(pin "7"
+			(uuid "e93c46d6-30eb-4785-b450-3b18f790f3bd")
+		)
+		(pin "4"
+			(uuid "35e5521e-8dc4-443a-964b-a8d15ba55658")
+		)
+		(pin "9"
+			(uuid "d3c8d004-4fe9-4063-906a-3d170a88263c")
+		)
+		(instances
+			(project "a320-overhead-lights"
+				(path "/a6380c82-c7b7-4173-9d72-a54a48f51bc9/5475985d-b23d-4b9f-a5ee-16f550599801"
+					(reference "APUMASTER1")
 					(unit 1)
 				)
 			)

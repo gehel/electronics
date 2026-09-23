@@ -1486,7 +1486,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17eb90d6-f7dd-49ef-afee-aa2740ea7f8a")
@@ -1506,7 +1506,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 130.81 76.2 0)
 			(effects
 				(font
@@ -1554,7 +1554,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cad8ebf-36aa-4581-a748-a6c0a563c114")
@@ -1574,7 +1574,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 92.71 114.3 0)
 			(effects
 				(font
@@ -1622,7 +1622,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e1ed9f2-1e06-4e1c-a61d-3dab16bd4ec9")
@@ -1642,7 +1642,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 130.81 50.8 0)
 			(effects
 				(font
@@ -1690,7 +1690,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ba019ea-bd5a-43e5-b887-0e6e20fe05fb")
@@ -1710,7 +1710,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 118.11 114.3 0)
 			(effects
 				(font
@@ -1824,7 +1824,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bcfbe29-6cf7-42f9-b979-1c5c3c67c024")
@@ -1844,7 +1844,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 92.71 50.8 0)
 			(effects
 				(font
@@ -1958,7 +1958,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71b82e19-0485-4014-96d5-087c0d95e54b")
@@ -1978,7 +1978,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 105.41 25.4 0)
 			(effects
 				(font
@@ -2164,7 +2164,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73da32d4-c45a-48e9-a828-f1889cad390f")
@@ -2184,7 +2184,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 118.11 38.1 0)
 			(effects
 				(font
@@ -2232,7 +2232,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7697caf8-cc45-48d1-922a-4ff9274c1909")
@@ -2252,7 +2252,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 92.71 76.2 0)
 			(effects
 				(font
@@ -2300,7 +2300,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "783b4dfe-7313-4794-a456-42dbb2dbdd7b")
@@ -2320,7 +2320,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 92.71 63.5 0)
 			(effects
 				(font
@@ -2368,7 +2368,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78d47a24-937e-4ef4-9316-a026c7de436e")
@@ -2388,7 +2388,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 130.81 101.6 0)
 			(effects
 				(font
@@ -2436,7 +2436,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94c8dc28-86e4-4084-b0d1-660fcc953d3b")
@@ -2456,7 +2456,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 118.11 63.5 0)
 			(effects
 				(font
@@ -2504,7 +2504,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2ea8a0a-d255-4d9c-93c0-fd6c145a1085")
@@ -2524,7 +2524,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 130.81 38.1 0)
 			(effects
 				(font
@@ -2572,7 +2572,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6c0f61f-ce0a-4627-ba9b-90f5aae0e49e")
@@ -2592,7 +2592,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 92.71 38.1 0)
 			(effects
 				(font
@@ -2640,7 +2640,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6fc3128-c693-49ad-af6d-3111382b32a5")
@@ -2660,7 +2660,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 105.41 88.9 0)
 			(effects
 				(font
@@ -2708,7 +2708,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a98f1602-230d-47de-bff0-43d67c3cc697")
@@ -2728,7 +2728,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 105.41 101.6 0)
 			(effects
 				(font
@@ -2776,7 +2776,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afe313dd-44d0-42c6-b4ca-3a116ff8d3d7")
@@ -2796,7 +2796,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 118.11 50.8 0)
 			(effects
 				(font
@@ -2844,7 +2844,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6d29f24-1eab-4cf0-9eaa-9368246ea0e6")
@@ -2864,7 +2864,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 118.11 101.6 0)
 			(effects
 				(font
@@ -3045,7 +3045,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c27af0d6-3a3b-484d-a25f-e35226139833")
@@ -3065,7 +3065,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 118.11 25.4 0)
 			(effects
 				(font
@@ -3113,7 +3113,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3fb1119-cb95-44d2-8575-446dc90265f4")
@@ -3133,7 +3133,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 105.41 63.5 0)
 			(effects
 				(font
@@ -3181,7 +3181,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6ddc086-1e92-4fb6-a3b6-a146858ec2be")
@@ -3201,7 +3201,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 105.41 38.1 0)
 			(effects
 				(font
@@ -3249,7 +3249,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c72454e2-f85d-479b-a7ca-f59447fc730e")
@@ -3269,7 +3269,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 130.81 114.3 0)
 			(effects
 				(font
@@ -3317,7 +3317,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf3a4de4-e031-47ac-ae52-87039e7ea5d3")
@@ -3337,7 +3337,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 130.81 63.5 0)
 			(effects
 				(font
@@ -3385,7 +3385,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d718913a-2e9e-4f02-b92a-5d18c8c8c524")
@@ -3405,7 +3405,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 130.81 25.4 0)
 			(effects
 				(font
@@ -3453,7 +3453,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7b7cc70-35f7-4cc3-8b02-3604b0830305")
@@ -3473,7 +3473,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 92.71 25.4 0)
 			(effects
 				(font
@@ -3521,7 +3521,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc61aca3-23e7-4340-a721-fe2f571a5c0d")
@@ -3541,7 +3541,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 118.11 88.9 0)
 			(effects
 				(font
@@ -3589,7 +3589,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddcb7723-001a-4e3d-912f-0fcfdfe1e1d9")
@@ -3609,7 +3609,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 92.71 88.9 0)
 			(effects
 				(font
@@ -3657,7 +3657,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e13e19e7-0b00-4144-b16f-dd47e0f34703")
@@ -3677,7 +3677,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 105.41 50.8 0)
 			(effects
 				(font
@@ -3725,7 +3725,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1658052-9785-4517-adc2-8332a9237a8c")
@@ -3745,7 +3745,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 130.81 88.9 0)
 			(effects
 				(font
@@ -3793,7 +3793,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e41fbf18-9bb3-4003-b8ac-24efcacbb1b6")
@@ -3813,7 +3813,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 105.41 76.2 0)
 			(effects
 				(font
@@ -3861,7 +3861,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec39bfb2-1b64-42c0-a8c6-f074b74be989")
@@ -3881,7 +3881,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 105.41 114.3 0)
 			(effects
 				(font
@@ -3929,7 +3929,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed063273-f66a-43a9-a3c0-059ec3e5d072")
@@ -3949,7 +3949,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 92.71 101.6 0)
 			(effects
 				(font
@@ -3997,7 +3997,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8b113f2-db2c-4a59-9322-968e7beb1747")
@@ -4017,7 +4017,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 118.11 76.2 0)
 			(effects
 				(font
